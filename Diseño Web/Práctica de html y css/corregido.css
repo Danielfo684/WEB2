@@ -1,0 +1,141 @@
+html{
+    height: 100%;
+}
+
+body{
+background-color:antiquewhite;
+    margin: 0;
+    height: 100%;
+}
+
+.container {
+    height: 100%;
+}
+.hero{
+border: 1px solid rgb(0, 0, 0);
+height: 100%;
+box-sizing: border-box;
+}
+header{
+    height: 10%;
+    background-color: rgb(159, 224, 224);
+}
+.slider {
+    padding: 3%;
+    box-sizing: border-box;
+    width: 100%;
+    height: 90%;
+}
+
+.izda {
+    background-color: blueviolet;
+height: 100%;
+width: 32%;
+float: left;
+
+}
+.drcha {background-color: blue;
+    width: 63%;
+height: 100%;
+float: right;}
+
+
+.sector2 {
+    padding: 3%;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.box1{
+    width: 50%;
+    height: 50%;
+    background-color: aqua;
+    float: left;
+}
+.box2{
+    width: 50%;
+    height: 50%;
+    background-color: rgb(74, 55, 110);
+    float: left;
+
+}
+.box3{
+    width: 50%;
+    height: 50%;
+    background-color: rgb(255, 0, 98);
+    float: left;
+
+}
+.box4{
+    width: 50%;
+    height: 50%;
+    background-color: rgb(120, 153, 66);
+    float: left;
+
+}
+.box5{
+    width: 500px;
+    height: 500px;
+    background-color: fuchsia;
+    float: left;
+    border-radius: 50%;
+    position: absolute ;
+    top:calc((100% / 2) - 250px);
+    left: calc((100% / 2) - 250px);
+}
+
+
+.sector3{
+    padding: 3%;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border: 1px solid red;
+}
+
+.square1{
+    width: 15%;
+    height: 20%;
+    background-color: rgb(255, 0, 98);
+    float: left;
+}
+.square2{
+    width: 15%;
+    height: 20%;
+    background-color: rgb(41, 47, 59);
+    float: right;
+    margin-top: 40px;
+
+}
+.square3{
+    width: 15%;
+    height: 20%;
+    background-color: rgb(117, 70, 88);
+    float: left;
+    margin-top: 40px;
+}
+
+.rectangle1{
+    width: 80%;
+    height: 20%;
+    background-color: rgb(42, 117, 80);
+    float: right;
+}
+.rectangle2{
+    width: 80%;
+    height: 20%;
+    background-color: rgb(73, 42, 69);
+    float: left;
+    margin-top: 40px;
+
+}
+.rectangle3{
+    width: 80%;
+    height: 20%;
+    background-color: rgb(41, 47, 59);
+    float: right;
+    margin-top: 40px;
+
+}

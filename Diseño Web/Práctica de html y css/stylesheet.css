@@ -1,0 +1,31 @@
+header{
+background-color: green;
+height: 80px;
+}
+body{
+    margin: 0;
+
+}
+
+#art1{
+
+width: 40%;
+background-color: beige;
+height: 500px;
+float: left;
+}
+
+#art2{
+background-color: aqua;
+    width: 55%;
+    height: 500px;
+    float: right;
+}
+#center{
+    margin: auto;
+    clear: both;
+    width: 95%;
+    height: 500px;
+    background-color: blueviolet;
+}
+
