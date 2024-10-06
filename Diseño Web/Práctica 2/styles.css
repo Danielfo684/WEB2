@@ -1,30 +1,184 @@
-html {
-    height: 100%;
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mynerve&display=swap');
 
+html {
+    font-family: 'SuffolkPunch', sans-serif;
+    src: url(SuffolkPunch\ Arctic\ Monkeys\ The\ Car.ttf);
+box-sizing: border-box;
 }
+
 body {
     margin: 0;
-    padding: 0;
-    height: 100%;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #ffffff;
-
-}
-.fondo {
-    background-image: url('images/fondo.png');
-    height: 100%;
     width: 100%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    background-position: 277px;
+    height: 100%;
+    padding: 0;
+    background-color: black;
+    display: flex;
+    flex-flow: column nowrap;
 }
+
 .heroSection {
     width: 100%;
     height: 100%;
-    display: flex;
+    background-image: url(images/fondoHeroSection.png);
+    background-size: cover;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
 }
-.container 
-{
+
+h1 {
+    font-size: 64px;
+    color: white;
+    font-style: normal;
+    padding: 0;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+    margin: 0 5%;
+    margin-left: 20%;
+    flex-flow: row wrap;
+}
+
+header>.texto {
+    font-size: 20px;
+    color: white;
+    padding: 3%;
+    padding-right: 0%;
+
+}
+
+.heroLogo {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    margin: 3%;
+}
+
+.logo {
+    width: 30%;
+}
+
+
+
+
+.socialLinks {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 3%;
+    width: 5%;
+    align-items: center;
+}
+.socialIcon {
+    width: 34px;
+    padding: 14px;
+}
+
+.lineaContainer {
+    height: 150px;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.linea {
+    border: 1px solid white;
+    height: 90%;
+}
+
+
+.firstPage {
+    padding: 5%;
     height: 100%;
+  }
+
+ .polaroidSection { display: flex;
+flex-flow: row wrap;
+justify-content: center;
+align-self: center;
+align-content: center;
+}
+
+.polaroidFormat {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin: 10px;
+    max-width: 800px;
+    justify-content: space-around;
+}
+
+.polaroid {
+    background-color: white;
+    width: 330px;
+    height: 400px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+
+
+
+}
+
+.polaroidFormat> p{
+    color: white;
+    width: 427px;
+    margin: 15px;
+}
+
+.emptySpace2 {
+    flex-grow: 0.5;
+    width: 20%;
+}
+
+.polaroid img {
+    margin: 15px;
+    margin-bottom: 0px;
+}
+
+.polaroidText {
+    font-size: 24px;
+    color: black;
+    text-align: center;
+    font-family: 'Mynerve', sans-serif;
+    margin: auto;
+}
+
+.firstAlbum {
+    padding: 5%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    text-align: left;
+    justify-content: space-around;
+}
+.albumImage {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    align-content: center;
+    
+}
+.albumText{
+    font-size: 24px;
+    color: white;
+    display: flex;
+    flex-flow: column nowrap;
+ 
+    width: 677px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.albumImage img {
+    width: 100%;
 }
