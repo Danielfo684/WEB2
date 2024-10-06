@@ -1,0 +1,32 @@
+.item{
+    width: 100px;
+
+    flex-grow:0.5; /* me permite que el elemento crezca en función del espacio disponible */
+    /* como tengo flex-flow en fila */
+    height: 100px;
+}
+
+.item1 {
+    background-color: beige;
+
+}
+.item2 {
+    background-color: blue;
+    flex-grow: 5;
+}
+.item3 {
+    background-color: rgb(92, 92, 51);
+}
+.item4 {
+    background-color: red;
+}
+.container {
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-around; /* me permite distribuir los elementos de manera uniforme en el contenedor */
+    height: 500px;
+    align-items: center; /* me permite alinear los elementos en el eje transversal */
+    flex-direction: column ; /* me permite cambiar el eje sobre el que se distribuyen los elementos */
+    flex-wrap: wrap;   /* me permite crear nuevas filas si los elementos ya no caben en la primera */
+     flex-flow: wrap; /* me permite combinar flex-direction y flex-wrap */
+}

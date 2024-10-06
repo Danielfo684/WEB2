@@ -1,0 +1,33 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.container{
+    width: 80%;
+    display: flex;
+    margin: 200px auto;
+    background: beige;
+    flex-wrap: wrap;
+}
+.picture{
+background-image: url(otra.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+min-height: 400px;
+    /*como hacer que una imagen sea responsive
+    si lo que tengo es una etiqueta <img> object-fit (hace lo mismo que b-size)
+
+    si es con background-image, no se puede hacer responsive con background-size (cover o contain, background-position y background-repeat
+    */
+
+}
+
+.container * {
+    flex: 1 1 400px;
+}
+.texto{
+    padding: 2rem;
+    box-sizing: border-box;
+}
