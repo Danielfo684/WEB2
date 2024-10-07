@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Rowdies:wght@300;400;700&display=swap');
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    background-color: #d1c2ae;
+    font-family: "Afacad Flux", Montserrat, sans-serif;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+h1,h2,h3 {
+    font-family: Rowdies, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(83, 17, 17);
+}
+a{
+    text-decoration: none;
+    color: rgb(255, 0, 85);
+    font-weight: 800;
+}
+a:hover{
+    color: rgb(160, 2, 55);
+    font-weight: 800;
+}
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.logo {
+text-align: center;
+}
+.tagline {
+    font-size: 1.2em;
+    font-weight: 400 ;
+}
+.list-nav {
+    display: flex;
+    margin: 3rem 0;
+    justify-content: space-evenly;
+}
+.list-nav li a {
+    padding: .5rem 1rem;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    background-color: rgba(255, 245, 238, 0.555);
+    text-transform: uppercase;
+}
+.list-nav li a:hover {
+    background-color: rgba(255, 0, 98, 0.8);
+    color: white;
+}
+.intro{
+    column-count: 2;
+    text-align: justify;
+    gap:3rem;
+}
+.builder {
+display: flex;
+flex-flow: row wrap;
+justify-content: space-between;
+}
+.builder-component {
+    border: 1px solid rgba(255, 255, 255, 0.445);
+    background-color: rgba(255, 245, 238, 0.26);
+    padding: 1rem;
+    margin-top: 2rem;
+    border-radius: 4px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.builder-component-name {
+    position: relative;
+}
+
+.builder-component-name::before{
+    content: "";
+    background-image: url(images/icons.png);
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: -185%;
+    left: 41%;
+    border-radius: 4px;
+}
+.builder-component_marshmallow .builder-component-name::before{
+    /*Para moverlo hacia al lado y que aparezca la nube*/
+    background-position: -40px;
+}
+.builder-component_candy .builder-component-name::before{
+    /*Para moverlo hacia al lado y que aparezca la nube*/
+    background-position: -80px;
+}
+.builder-component_accessories .builder-component-name::before{
+    /*Para moverlo hacia al lado y que aparezca la nube*/
+    background-position: -120px;
+}
+.builder-action {
+    margin: 40px 0;
+    padding: 1.5rem;
+    
+    display: flex;
+    flex-wrap: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.builder-action-label{
+text-transform: uppercase;
+font-size:1.2rem;
+margin-right: 0.8rem;
+
+}
+.builder-action-field {
+font-size: 1.2rem;
+flex: 1 1 50%;
+
+}
+.builder-action-button {
+    margin-top: 2rem;
+    flex: 1 1 100%;
+
+}
+button {
+    background-color: red;
+    border: 1px solid rgba(209, 200, 200, 0.466);
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    box-shadow:inset 0 0 1px 1px rgba(255, 255, 255, 0.61);
+}
+button:hover {
+    background-color: rgb(255, 255, 255, 0.5);
+    color: rgba(255, 0, 98, 0.8);
+    cursor: pointer;
+}
+
+.ingredients-list{
+    height: 100%;
+display: flex;
+flex-flow: column nowrap;
+border: 1px solid rgba(255, 255, 255, 0.445);
+
+}
+.ingredients-list li {
+   display: flex;
+   align-items: center;
+}
+
+.ingredients-list li > label {
+    border: 1px solid rgba(255, 255, 255, 0.445);
+margin-left: 3px;
+}
+
+.ingredients-list-item {
+    margin-top: 0.4rem;
+}
+
+.ingredients-list-item:last-child {
+margin-top: auto;
+}
+input[type=radio]+label, input[type=checkbox]+label {
+position: relative;
+}
+
+input[type=radio]+label::before, input[type=checkbox]+label::before {
+    position: absolute;
+    top: 4px;
+    left: -22px;
+    content: "";
+
+    width: 14px;
+    height: 14px;
+    border: 1px solid rgba(194, 32, 32, 0.445);   
+    background-color: rgb(255, 255, 255); 
+}
+input[type=radio]+label::before{
+    border-radius: 50%;
+}
+input[type=radio]+label:hover::before, input[type=radio]+label:focus::before{
+    background-color: rgba(255, 0, 98, 1);
+}
+input[type=checkbox]+label:hover::before, input[type=checkbox]+label:focus::before{
+    background-color: rgba(255, 0, 98, 1);
+}
