@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mynerve&display=swap');
+
 @font-face {
     font-family: 'SuffolkPunch';
     src: url(/assets/fonts/suffolkPunch.ttf),
-    url(/assets/fonts/suffolkPunch.woff),
-    url(/assets/fonts/suffolkPunch.woff2);
+        url(/assets/fonts/suffolkPunch.woff),
+        url(/assets/fonts/suffolkPunch.woff2);
 }
+
 html {
     font-family: suffolkPunch;
     src: url(SuffolkPunch\ Arctic\ Monkeys\ The\ Car.ttf);
@@ -55,24 +57,27 @@ header {
 }
 
 header>.texto {
-    
+
     font-size: 20px;
     color: white;
     padding: 3% 1%;
     text-align: center;
-box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 .texto:hover {
-    box-shadow: rgba(255, 255, 255, 0.25) 0px 30px 60px -12px inset, rgba(255, 255, 255, 0.3) 0px 18px 36px -18px inset;    cursor: pointer;
-cursor: pointer;
-border-radius: 2px;
+    box-shadow: #423E3D 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    cursor: pointer;
+    border-radius: 2px;
 }
+
 /*.texto:hover {
     box-shadow: rgba(255, 255, 255, 0.35) 0px -50px 36px -28px inset;cursor: pointer;
 } */
 .headerBox {
     flex-grow: 0.8;
 }
+
 .heroLogo {
     display: flex;
     flex-flow: column wrap;
@@ -100,10 +105,10 @@ border-radius: 2px;
     padding: 14px;
 
 }
+
 .socialIcon:hover {
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 30px 60px -12px inset, rgba(255, 255, 255, 0.3) 0px 18px 36px -18px inset;    cursor: pointer;
-cursor: pointer;
-background-image: url(../images/blured.png);
+    box-shadow: #423E3D 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    cursor: pointer;
     cursor: pointer;
     border-radius: 2px;
 }
@@ -137,7 +142,7 @@ background-image: url(../images/blured.png);
 
 .polaroidFormat {
     display: flex;
-    flex-flow:  wrap;
+    flex-flow: wrap;
     align-items: center;
     margin: 10px;
     max-width: 800px;
