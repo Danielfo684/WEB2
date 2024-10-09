@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*reset css si es un import*/
+
+@font-face {
+    font-family: 'SuffolkPunch';
+    src: url(fonts/suffolkPunch.ttf);
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(fonts/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url(fonts/Poppins-Medium.ttf);
+}
+
+*{
+box-sizing: border-box;
+
+}
+/* ---------------------- resolver el problema de los heights heredados -------- */
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: Roboto;
+}
+
+.container {
+    border: 1px solid black;
+    width: 100%;
+    height: 100vh;
+}
+.navcollapse {
+    display: none;
+}
+.flexcontainer {
+    display: flex;
+    flex-flow: row wrap;
+
+    /* centrar los items */
+    justify-content: center;
+    align-items: center;
+
+    /* mismo tamaño que el resto de items */
+    width: 100%;
+    height: 100%;
+}
+
+.item1, .item3 {
+flex: 1;
+position: relative;
+height: 100%;
+}
+.item2 {
+flex: 20;
+display: flex;
+flex-flow: column nowrap;
+justify-content: center;
+align-items: center;
+align-content: center;
+height: 100%;
+}
+
+nav, .slider, .item2footer {
+    width: 100%;
+    border: 1px solid black;
+}
+
+
+
+
+
+
+.slider {
+    flex: 10;
+}
+.item2footer {
+    flex: 1;
+}
+
+/*---------------------- NAV ----------------------*/
+.logo {
+    flex: 1;
+    height: 100%;
+    border: 1px solid red;
+}
+.imglogo {
+    width: 100%;
+    height: 100%;
+
+    background-image: url(images/nz-logo.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.nav{
+    flex: 8;
+}
+nav {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+#menu_on {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
+    list-style-type: none;
+}
+
+#menu_on li a {
+   font-family: 'Poppins';
+   text-transform: uppercase;
+    font-size: 1.2em;
+    color: rgb(53, 47, 37);
+    text-decoration: none;
+}
+
+#menu_on li {
+margin-left: 3vw;
+
+}
+
+
+
+.slider {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-image: url(images/NZ-portada.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.legend {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: Montserrat;
+    color: white;
+    text-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.great {
+    font-size: xx-large;
+}
+.little {
+    font-size: medium;
+}
+.medium {
+    font-size: large;
+}
+.earleft {
+    background-color: rgba(181,181,181,1);
+    width: 40px;
+    height: 220px;
+    position:absolute;
+    right: 0;
+    top: calc((100% /2) - 110px);
+}
+
+.earright {
+    background-color: rgba(181,181,181,1);
+    width: 40px;
+    height: 220px;
+    position:absolute;
+    left: 0;
+    top: calc((100% /2) - 110px);
+}
+.move{
+    height: 40px;
+    width: 220px;
+    
+transform: rotate(-90deg) translateX(-15%) translateY(-200%);
+}

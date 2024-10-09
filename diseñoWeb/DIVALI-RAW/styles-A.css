@@ -1,15 +1,117 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 h1 {
     font-family: roboto, sans-serif;
+    color: aliceblue;
 }
 
 h3 {
-    font-family: "Playfair Display", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 html, body {
     height: 100%;
-    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    background: radial-gradient(circle, rgb(51, 47, 121) 0%, rgb(93, 93, 129) 35%, rgb(143, 170, 175) 100%);
+    box-sizing: border-box;
+    margin: 0;
+}
+
+header {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap; 
+    width: 100%;
+
+}
+
+.fila1 {
+width: 80%;
+margin-left: auto;
+}
+.fila2 {
+width: 80%;
+
+}
+
+.fila1 ul, .fila2 ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text {
+color: white;
+
+}
+.fila1 ul li:nth-child(1) {
+    width: 250px;
+    height: 260px;
+    padding: 1rem;
+    text-align: center;
+    box-sizing: border-box;
+}
+.fila1 ul li:nth-child(2){
+    width: 250px;
+    height: 260px;
+    padding: 1rem;
+    text-align: center;
+    box-sizing: border-box;
+}
+ .fila2 ul li:nth-child(2) {
+    width: 250px;
+    height: 260px;
+    padding: 1rem;
+    text-align: center;
+    box-sizing: border-box;
+}
+.fila2 ul li:nth-child(3) {
+    width: 250px;
+    height: 260px;
+    padding: 1rem;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.fila1 ul li:nth-child(1) {
+    background: linear-gradient(140deg, rgb(39, 100, 27) 0%, rgb(87, 216, 93) 100%);
+    color: black;
+}
+.fila1 ul li:nth-child(2) {
+    background: linear-gradient(140deg, rgb(105, 35, 99) 0%, rgb(201, 23, 171) 100%);
+    color: black;
+}
+.fila2 ul li:nth-child(2) {
+    background: linear-gradient(140deg, rgb(209, 85, 14) 0%, rgb(204, 178, 63) 100%);
+    color: black;
+}
+.fila2 ul li:nth-child(3) {
+    background: linear-gradient(140deg, rgb(165, 177, 2) 0%, rgb(255, 252, 54) 100%);
+    color: black;
+}
+
+.fila1 ul li:last-child {
+background-image: url(pic3.jpg);
+background-size: cover;
+background-position: center center;
+background-repeat: no-repeat;
+
+flex: 1 1 260px;
+}
+.fila2 ul li:first-child {
+background-image: url(pic4.jpg);
+background-size: cover;
+background-position: center center;
+background-repeat: no-repeat;
+
+flex: 1 1 260px;
 }

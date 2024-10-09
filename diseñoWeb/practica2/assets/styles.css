@@ -48,19 +48,28 @@ p {
 header {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid white;
     margin: 0 5%;
     margin-left: 20%;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
+    box-sizing: border-box;
 }
 
 header>.texto {
-    font-size: 24px;
+    
+    font-size: 20px;
     color: white;
-    padding: 3%;
-    padding-right: 0%;
-
+    padding: 3% 1%;
+    text-align: center;
+box-sizing: border-box;
 }
+.texto:hover {
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 30px 60px -12px inset, rgba(255, 255, 255, 0.3) 0px 18px 36px -18px inset;    cursor: pointer;
+cursor: pointer;
+border-radius: 2px;
+}
+/*.texto:hover {
+    box-shadow: rgba(255, 255, 255, 0.35) 0px -50px 36px -28px inset;cursor: pointer;
+} */
 .headerBox {
     flex-grow: 0.8;
 }
@@ -89,6 +98,14 @@ header>.texto {
 .socialIcon {
     width: 34px;
     padding: 14px;
+
+}
+.socialIcon:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 30px 60px -12px inset, rgba(255, 255, 255, 0.3) 0px 18px 36px -18px inset;    cursor: pointer;
+cursor: pointer;
+background-image: url(../images/blured.png);
+    cursor: pointer;
+    border-radius: 2px;
 }
 
 .lineaContainer {
