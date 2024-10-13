@@ -12,23 +12,21 @@ html {
     font-family: suffolkPunch;
     src: url(SuffolkPunch\ Arctic\ Monkeys\ The\ Car.ttf);
     box-sizing: border-box;
+    background-color: #050505;
 }
 
 body {
     margin: 0;
-    width: 100%;
-    height: 100%;
     padding: 0;
-    background-color: black;
+    background-color: #050505;
     display: flex;
     flex-flow: column nowrap;
 }
 
 .heroSection {
     width: 100%;
-    height: 100%;
-    background-image: url(../images/fondoHeroSection.png);
-    background-size: cover;
+    height: 100vh;
+    background-image: url(../images/Background_hero.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -87,12 +85,11 @@ header>.texto {
 
 .logo {
     width: 30%;
+    border: 1px solid white;
 }
 
-
-
-
 .socialLinks {
+    border: 1px solid white;
     display: flex;
     flex-flow: column nowrap;
     margin: 3%;
@@ -144,8 +141,7 @@ header>.texto {
     display: flex;
     flex-flow: wrap;
     align-items: center;
-    margin: 10px;
-    max-width: 800px;
+    margin: 0px;
     justify-content: space-around;
 }
 
@@ -156,47 +152,61 @@ header>.texto {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
+    justify-content: center;
 }
 
 .polaroidFormat>p {
     color: white;
     width: 427px;
-    margin: 15px;
+    margin: 25px;
+}
+
+#type1 {
+    margin-right: auto;
+
+}
+
+#type2 {
+    margin-left: auto;
 }
 
 .emptySpace2 {
     flex-grow: 0.5;
-    width: 20%;
+    width: 15%;
 }
 
 .polaroid img {
-    margin: 15px;
     margin-bottom: 0px;
+    flex: 0.5;
 }
 
 .polaroidText {
     font-size: 24px;
     color: black;
-    text-align: center;
     font-family: 'Mynerve', sans-serif;
-    margin: auto;
+    text-align: center;
+    position: relative;
 }
 
 .firstAlbum {
     padding: 5%;
     display: flex;
-    flex-flow: row wrap;
-    align-items: center;
+    flex-flow: column;
     text-align: left;
-    justify-content: space-around;
+}
+
+#album-format {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .albumImage {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    align-content: center;
-
+    flex: 0.4;
+    min-width: 400px;
 }
 
 .albumText {
@@ -205,11 +215,63 @@ header>.texto {
     display: flex;
     flex-flow: column nowrap;
 
-    width: 677px;
+    max-width: 500px;
     font-family: 'Montserrat', sans-serif;
 
 }
 
 .albumImage img {
     width: 100%;
+}
+
+/*-----------------------------NEW Style Section-----------------------------*/
+
+.new-style {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/new_style.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 100px;
+    box-sizing: border-box;
+}
+
+.style-flex {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    margin: 0;
+
+}
+
+.style-flex p {
+    font-size: 1rem;
+
+    font-family: Montserrat;
+    color: white;
+}
+
+#start-new-style-flex {
+    margin-left: auto;
+    min-width: 250px;
+    width: 30%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+
+}
+
+#middle-new-style-flex {
+    flex-grow: 1;
+    height: 300px;
+
+}
+
+#end-new-style-flex {
+    margin-right: auto;
+    min-width: 250px;
+    width: 30%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
