@@ -1,0 +1,857 @@
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mynerve&display=swap');
+
+@font-face {
+    font-family: 'SuffolkPunch';
+    src: url(/assets/fonts/suffolkPunch.ttf),
+        url(/assets/fonts/suffolkPunch.woff),
+        url(/assets/fonts/suffolkPunch.woff2);
+}
+
+
+html {
+    font-family: suffolkPunch;
+    src: url(SuffolkPunch\ Arctic\ Monkeys\ The\ Car.ttf);
+    box-sizing: border-box;
+    background-color: #050505;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #050505;
+    height: 100%;
+}
+
+.heroSection {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/Background_hero.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+
+h1 {
+    font-size: 64px;
+    color: white;
+    font-style: normal;
+    padding: 0;
+}
+@media (max-width: 480px) {
+    h1 {
+        font-size: 32px;
+    }
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5%;
+    margin-left: 20%;
+    flex-flow: row nowrap;
+    box-sizing: border-box;
+}
+
+header>a{
+text-decoration: none;
+    font-size: 20px;
+    color: white;
+    padding: 3% 1%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-flow: column nowrap;
+        align-items: center;
+        margin: 0;
+    }
+
+    header > a {
+        font-size: 16px;
+        padding: 10px 0;
+    }
+
+
+}
+.texto:hover {
+    box-shadow: #423E3D 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+/*.texto:hover {
+    box-shadow: rgba(255, 255, 255, 0.35) 0px -50px 36px -28px inset;cursor: pointer;
+} */
+.headerBox {
+    flex-grow: 0.8;
+}
+
+.heroLogo {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    margin: 3%;
+}
+
+.logo {
+    width: 30%;
+}
+
+.socialLinks {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 3%;
+    width: 5%;
+    align-items: center;
+}
+
+.socialIcon {
+    width: 34px;
+    padding: 14px;
+
+}
+
+.socialIcon:hover {
+    box-shadow: #423E3D 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    cursor: pointer;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.lineaContainer {
+    flex-grow: 1;
+    height: 13vh;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.linea {
+    border: 1px solid white;
+    height: 90%;
+}
+
+/*-----------------------------First Page Section-----------------------------*/
+
+
+
+.firstPage {
+    padding: 5%;
+    height: auto;
+
+
+
+}
+
+.polaroidSection {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+}
+
+.polaroidFormat {
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    margin: 0px;
+    justify-content: space-around;
+}
+
+.polaroid {
+    background-color: white;
+    width: 330px;
+    height: 400px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.polaroidFormat>p {
+    color: white;
+    width: 427px;
+    margin: 25px;
+}
+
+#type1 {
+    margin-right: auto;
+
+}
+
+#type2 {
+    margin-left: auto;
+}
+
+.emptySpace2 {
+    flex-grow: 0.5;
+    width: 15%;
+}
+
+.polaroid img {
+    margin-bottom: 0px;
+    flex: 0.5;
+}
+
+.polaroidText {
+    font-size: 24px;
+    color: black;
+    font-family: 'Mynerve', sans-serif;
+    text-align: center;
+    position: relative;
+}
+@media (max-width: 480px) {
+  
+    .polaroidFormat>p {
+        max-width: 60%;
+        font-size: 16px;
+    }
+
+}
+/*-----------------------------Album Section-----------------------------*/
+.firstAlbum {
+    padding: 5%;
+    display: flex;
+    flex-flow: column;
+    text-align: left;
+}
+
+#album-format {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.albumImage {
+    flex: 0.4;
+    min-width: 400px;
+}
+
+.albumText {
+    color: white;
+    display: flex;
+    flex-flow: column nowrap;
+
+    max-width: 500px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.albumImage img {
+    width: 100%;
+}
+@media (max-width: 480px) {
+    .firstAlbum {
+        padding: 10%;
+        text-align: center;
+
+    }
+
+    #album-format {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    .albumImage {
+        min-width: unset;
+        width: 100%;
+    }
+
+    .albumText {
+        max-width: 100%;
+        text-align: center;
+        
+    }
+    .albumText p {
+        font-size: 16px;
+    }
+}
+
+/*-----------------------------NEW Style Section-----------------------------*/
+
+.new-style {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/new_style.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 100px;
+    box-sizing: border-box;
+}
+
+
+.style-flex {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    margin: 0;
+
+}
+
+.style-flex p {
+    font-size: 1.2rem;
+
+    font-family: Montserrat;
+    color: white;
+}
+
+#start-new-style-flex {
+    margin-left: auto;
+    min-width: 250px;
+    width: 35%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+
+}
+
+#middle-new-style-flex {
+    flex-grow: 1;
+    height: 300px;
+
+}
+
+#end-new-style-flex {
+    margin-right: auto;
+    min-width: 250px;
+    width: 35%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 480px) {
+    .new-style {
+        padding: 20px;
+        background-size: contain;
+    }
+
+    .style-flex {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    #start-new-style-flex,
+    #end-new-style-flex {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    #middle-new-style-flex {
+        height: auto;
+        width: 100%;
+    }
+
+    .style-flex p {
+        font-size: 16px;
+        text-align: center;
+    }
+}
+/*--------------LAST ALBUM SECTION -----------------*/
+
+.last-album {
+    padding: 5%;
+}
+
+.last-album-flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+#last-album-format {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    color: white;
+    padding: 20px;
+}
+
+#last-album-format h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+    padding: 15px;
+    color: white;
+    
+
+}
+
+.last-album-image {
+    padding: 3%;
+    background-color: white;
+    margin: 0;
+}
+
+.last-album-image img {
+    flex: 0.4;
+    min-width: 400px;
+}
+
+.last-album-text {
+    font-size: 18px;
+    color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    max-width: 500px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+}
+@media (max-width: 480px) {
+    .last-album-flex {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    .last-album-image img {
+        width: 100%;
+        min-width: unset;
+    }
+
+    .last-album-text {
+        max-width: 100%;
+        text-align: center;
+       
+    }
+    .last-album-text p {
+        font-size: 16px;
+    }
+}
+
+/*----------------------------Intersection-----------------------------*/
+.intersection-hits {
+    display: flex;
+    width: 100%;
+    background-image: url(../images/concert-abstract.png);
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: auto;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/*-----------------------------Music PLAYER Section-----------------------------*/
+
+.music-player {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    padding: 5%;
+    gap: 30px;
+
+}
+
+.player-flex {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 30px;
+    background-color: white;
+    gap: 15px;
+    border-radius: 5px;
+}
+
+.player-flex img {
+    width: 450px;
+    height: 450px;
+}
+@media (max-width: 480px) {
+    .music-player {
+        flex-flow: column nowrap;
+        padding: 10%;
+    }
+
+    .player-flex {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .player-flex img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/*-----------------------------Concert Section-----------------------------*/
+
+.concert {
+    background-image: url(../images/ru-concert.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 5%;
+    height: 100vh;
+    box-sizing: border-box;
+
+}
+
+.concert-2 {
+    background-image: url(../images/concert2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 5%;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.concert-2 h3 {
+    font-family: montserrat;
+    color: white;
+}
+
+.tourlist {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: left;
+
+
+    padding: 2%;
+    gap: 30px;
+}
+
+.tour {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 50px;
+}
+
+.ticket {
+    border-radius: 15px;
+    width: 140px;
+    height: 47px;
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: #FDFDFB;
+    align-items: center;
+    justify-content: space-evenly;
+    align-self: right;
+}
+
+.ticket h4 {
+    font-family: montserrat;
+    color: black;
+    padding: 10px;
+}
+
+.tour-text-align {
+    text-align: center;
+    color: white;
+    font-family: montserrat;
+    font-weight: 400;
+    width: 250px;
+}
+@media (max-width: 480px) {
+    .concert, .concert-2 {
+        padding: 20px;
+        height: auto;
+        background-size: contain;
+    }
+
+    .tourlist {
+        padding: 10px;
+        gap: 20px;
+    }
+
+    .tour {
+        flex-flow: column nowrap;
+        gap: 20px;
+    }
+
+    .ticket {
+        width: 100px;
+        height: 35px;
+    }
+
+    .ticket h4 {
+        font-size: 14px;
+    }
+
+    .tour-text-align {
+        width: 100%;
+        font-size: 14px;
+    }
+}
+
+
+/*-----------------------------Shop Section-----------------------------*/
+.shop {
+    width: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    color: white;
+    padding: 5%;
+    box-sizing: border-box;
+    margin-bottom: 10%;
+
+
+}
+
+.flexshop {
+    display: flex;
+    flex-flow: row wrap;
+    font-family: montserrat;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+
+ 
+
+
+}
+
+.product>img {
+    width: 330px;
+
+}
+
+.product-line {
+    border: 1px solid white;
+}
+
+.product-title {
+    font-size: 1.2rem;
+    border-top: 1px solid white;
+    padding-top: 19px;
+    text-align: center;
+}
+
+.product-quantity {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.product-quantity input {
+    background-color: #DAAB00;
+    height: 1.5rem;
+    width: 2rem;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.product-price {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    width: 80%;
+    height: 3rem;
+    margin: 0 auto;
+    border-radius: 15px;
+    background-color: rgb(23, 23, 23);
+
+}
+
+.product-price:hover {
+    box-shadow: #423E3D 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+}
+
+
+
+
+
+
+
+
+
+/*-----------------------------Contact Section-----------------------------*/
+.contact {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-image: url(../images/concert-color.jpg);
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    padding: 500px 0;
+}
+
+.contact-form-container {
+    background-color: #282828;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
+    height: 85vh;
+    font-family: montserrat;
+
+
+}
+
+.contact-form-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+    font-family: suffolkPunch;
+}
+
+.contact-form-container p {
+    text-align: center;
+
+    margin-bottom: 20px;
+    color: #b3b3b3;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    color: white;
+
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+textarea {
+    font-family: montserrat;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    background-color: #1e1e1e;
+}
+
+
+
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3e3e3e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: #ffffff 0px 30px 60px -12px inset, rgba(178, 178, 178, 0.3) 0px 18px 36px -18px inset;
+    cursor: pointer;
+}
+
+/*-----------------------------Footer Section-----------------------------*/
+
+footer {
+    width: 100%;
+
+
+    background-color: #3e3e3e;
+    color: white;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 20px;
+    box-sizing: border-box;
+    padding: 5%;
+
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo img {
+    width: 220px;
+    height: 103px;
+    align-self: center;
+}
+
+.footer-logo p {
+    font-size: x-small;
+    margin: 10px;
+    align-self: baseline;
+}
+
+.footer-social {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 3%;
+    align-items: center;
+}
+
+
+.footer-social img {
+    width: 34px;
+    height: 34px;
+    padding: 14px;
+
+}
+
+.footer-social img:hover {
+    box-shadow: #ffffff 0px 30px 60px -12px inset, rgba(178, 178, 178, 0.3) 0px 18px 36px -18px inset;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.footer-links {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    border-left: 1px solid white;
+    align-items: center;
+
+
+
+}
+
+.footer-links p {
+    font-size: small;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links p:hover {
+    cursor: pointer;
+    text-decoration: dashed;
+}
