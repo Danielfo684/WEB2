@@ -85,11 +85,9 @@ header>.texto {
 
 .logo {
     width: 30%;
-    border: 1px solid white;
 }
 
 .socialLinks {
-    border: 1px solid white;
     display: flex;
     flex-flow: column nowrap;
     margin: 3%;
@@ -111,7 +109,8 @@ header>.texto {
 }
 
 .lineaContainer {
-    height: 150px;
+    flex-grow: 1;
+    height: 13vh;
     align-content: center;
     display: flex;
     flex-direction: column;
@@ -210,7 +209,7 @@ header>.texto {
 }
 
 .albumText {
-    font-size: 20px;
+    font-size: 18px;
     color: white;
     display: flex;
     flex-flow: column nowrap;
@@ -248,7 +247,7 @@ header>.texto {
 }
 
 .style-flex p {
-    font-size: 1rem;
+    font-size: 1.2rem;
 
     font-family: Montserrat;
     color: white;
@@ -257,7 +256,7 @@ header>.texto {
 #start-new-style-flex {
     margin-left: auto;
     min-width: 250px;
-    width: 30%;
+    width: 35%;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
 
@@ -272,6 +271,147 @@ header>.texto {
 #end-new-style-flex {
     margin-right: auto;
     min-width: 250px;
-    width: 30%;
+    width: 35%;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.shop {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    color: white;
+    padding: 100px;
+box-sizing: border-box;
+}
+
+.flexshop {
+    border: 1px solid white;
+    display: flex;
+    flex-flow: row wrap;
+    font-family: montserrat;
+justify-content: space-evenly;
+align-items: center;
+align-content: center;
+;
+
+}
+.product 
+{
+    border: 1px solid red;
+}
+.product img {
+}
+.product-line{
+    border: 1px solid white;
+}
+
+.product-title {
+    font-size: 1.2rem;
+    border-top: 1px solid white;
+    padding-top: 19px;
+    text-align: center;
+}
+.product-quantity {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+align-items: center;
+}
+
+.product-quantity input{
+    background-color: #DAAB00;
+    height: 1.5rem;
+    width: 2rem;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    border-radius: 4px;
+    text-align: center;
+}
+.product-price {
+    display: flex;
+align-items: center;
+align-content: center;
+justify-content: center;
+width: 60%;
+height: 2.8rem;
+margin: 0 auto;
+border-radius: 5px;
+background-color: rgb(23, 23, 23);
+
+}
+.product-price:hover{
+    box-shadow: #423E3D 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+}
+/*-----------------------------Footer Section-----------------------------*/
+
+footer {
+    width: 100%;
+    height: 10%;
+    margin-top: 10%;
+    background-color: #3E3938;
+    color: white;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 20px;
+    box-sizing: border-box;
+    padding: 1% 5% ;}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;}
+.footer-logo img {
+    width: 220px;
+    height: 103px;
+    align-self: center;
+}
+.footer-logo p {
+    font-size: x-small;
+    margin: 10px;
+    align-self: baseline;
+}
+
+.footer-social {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 3%;
+    align-items: center;
+}
+
+
+.footer-social img {
+    width: 34px;
+    height: 34px;
+    padding: 14px;
+
+}
+
+.footer-social img:hover {
+    box-shadow: #ffffff 0px 30px 60px -12px inset, rgba(178, 178, 178, 0.3) 0px 18px 36px -18px inset;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.footer-links {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    border-left: 1px solid white;
+    align-items: center;
+    
+
+
+}
+.footer-links p {
+    font-size: small;
+}
+.footer-links a {
+color: white;
+text-decoration: none;
+}
+.footer-links p:hover {
+    cursor: pointer;
+text-decoration:dashed;
 }
