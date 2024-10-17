@@ -1,332 +1,980 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-/*reset css si es un import*/
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
 
-@font-face {
-    font-family: 'SuffolkPunch';
-    src: url(fonts/suffolkPunch.ttf);
-}
-@font-face {
-    font-family: 'Roboto';
-    src: url(fonts/Roboto-Medium.ttf);
-}
-@font-face {
-    font-family: 'Poppins';
-    src: url(fonts/Poppins-Medium.ttf);
-}
+/*Reset CSS*/
 
 *{
-box-sizing: border-box;
-
+    box-sizing: border-box;
+    
 }
-/* ---------------------- resolver el problema de los heights heredados -------- */
-html, body {
-    width: 100%;
+
+/*-----------Resolver el problema de los heights heredados en los elementos flexibles-----------*/
+
+html, body{
+    height: 100%;
     height: 100%;
     margin: 0;
-    font-family: Roboto;
+    font-family:'jost';
 }
 
-.container {
+.container{
     width: 100%;
     height: 100vh;
-    overflow: hidden;
-}
-.navcollapse {
-    display: none;
-}
-.flexcontainer {
-    display: flex;
-    flex-flow: row wrap;
 
-    /* centrar los items */
+}
+
+.navcollapse{
+    display: none;
+
+}
+
+.flexcontainer{ 
+    display: flex;
+    flex-flow: row nowrap;
+    /*--centrar los elementos--*/
     justify-content: center;
     align-items: center;
-
-    /* mismo tamaño que el resto de items */
-    width: 100%;
+    /*---same size as its fathers---*/
     height: 100%;
+    width: 100%;
+   
+
 }
 
-.item1, .item3 {
-flex: 1;
-position: relative;
-height: 100%;
+.item1,.item3{
+    flex: 1;
+    position: relative;
+    height: 100%;
+}	
+
+.item2{
+    display: flex;
+    flex: 20;
+    height: 100%;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
-.item2 {
-flex: 20;
-display: flex;
-flex-flow: column nowrap;
-justify-content: center;
-align-items: center;
-align-content: center;
-height: 100%;
-}
+
 
 nav, .slider, .item2footer {
-    width: 100%;}
+    width: 100%;
+   
+}
 
 
-
-
-
-
-.slider {
+.slider{
     flex: 10;
 }
-.item2footer {
+
+.item2footer{
     flex: 1;
 }
 
-/*---------------------- NAV ----------------------*/
-.logo {
-    flex: 1;
-    height: 100%;
-}
-.imglogo {
-    width: 100%;
-    height: 100%;
+/*-----------------------NAV-----------------------*/
 
-    background-image: url(images/nz-logo.webp);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
+.logo{
+    flex:1;
+    height: 100%;
+   
 }
+
 .nav{
     flex: 8;
+    
 }
-nav {
+nav{
+    flex:1;
+
     display: flex;
-    flex: 1;
     justify-content: space-between;
 }
 
-#menu_on {
-    height: 100%;
+#menu_on{
     display: flex;
-    justify-content: flex-end;
-    align-self: center;
     list-style-type: none;
+    height: 100%;
+
+    justify-content: flex-end;
+    align-items: center;
+
 }
 
-#menu_on li a {
-   font-family: 'Poppins';
-   text-transform: uppercase;
-    font-size: 1.2em;
-    color: rgb(53, 47, 37);
+#menu_on li a{
+    font-family: 'Catamaran';
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: #141414;
     text-decoration: none;
 }
 
-#menu_on li {
-margin-left: 3vw;
-
+#menu_on li{
+    margin-left: 2rem;
 }
 
+#menu_on li a:hover{
+    color: #1c22db;
+}
 
+.imglogo{
+    background-image: url(assets/img/image.png);
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
 
-.slider {
+/*-----------------------SLIDER-----------------------*/
+
+.slider{
     display: flex;
     justify-content: center;
-    align-content: center;
     align-items: center;
-    background-image: url(images/NZ-portada.jpg);
+    background-image: url(/assets/img/img6.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
 }
-div.legend {
-    text-transform: uppercase;
+
+.legend{
+    color: #fff;
+    font-family: 'Crimson Text';
     text-align: center;
-    font-family:  Righteous;
-    color: white;
-    text-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    text-transform: uppercase;
+
+    
 }
-.great {
-    font-size: xx-large;
+
+.little{
+    font-size: 1.4rem;
 }
-.little {
-    font-size: medium;
+
+.great{
+    font-size: 4rem;
+    font-weight: 900;
 }
-.medium {
-    font-size: large;
+
+.medium{
+    font-size: 2rem;
 }
-.earleft {
-    background-color: rgba(181,181,181,1);
+
+/*----------------------both sides----------------------*/
+
+.earleft{
+    background-color: rgb(181, 181, 181,1);
     width: 40px;
     height: 220px;
-    position:absolute;
+
+    position: absolute;
     right: 0;
-    top: calc((100% /2) - 110px);
+    top:calc((100%/2) - 110px);
 }
 
-.earright {
-    background-color: rgba(181,181,181,1);
+.earright{
+    background-color: rgb(181, 181, 181,1);
     width: 40px;
     height: 220px;
-    position:absolute;
+
+    position: absolute;
     left: 0;
-    top: calc((100% /2) - 110px);
+    top:calc((100%/2) - 110px);
 }
+
 .move{
-    height: 40px;
+    height:40px; 
     width: 220px;
-    
-transform: rotate(-90deg) translateX(-40%) translateY(-200%);
-font-size: 1.4rem;
-    color: white;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: rigtheous;
-
-
-
+    transform-origin:0 0 ;
+    transform: rotate(-90deg) translateX(-82%) translateY(20%);
 }
 
-.move a{text-decoration: none;
-color: white;}
+.move a{
+    font-size: 1.2rem;
+    color: #fff;
+    font-family: 'Catamaran';
+    text-transform: uppercase;
+    text-decoration: none;
+}
 
-.suscribe{
-    height: 40px;
+.move a:hover{
+    color: #1c22db;
+}
+
+.subscribe {
+    height:40px; 
     width: 220px;
+    transform-origin:0 0 ;
+    transform: rotate(-90deg) translateX(-65%) translateY(18%);
+}
+
+.subscribe a{
+    font-size: 1.2rem;
     
-transform: rotate(-90deg) translateX(-40%) translateY(-200%);
-font-size: 1.4rem;
-    color: white;
-    text-align: center;
+    color: #fff;
+    font-family: 'Catamaran';
     text-transform: uppercase;
-    font-family: rigtheous;
+    text-decoration: none;
+}
 
+.subscribe a:hover{
+    color: #1c22db;
+}
+
+.earbutton{
+    background-color: rgb(0, 0, 0);
+    width: 40px;
+    height: 40px;
+
+    position: absolute;
+    bottom: 0;
+}
+
+.earbutton svg{
+    margin-top: 15px;
+    margin-left: 8px;
+}
+/*-----------------------SLIDER NAV-----------------------*/
+
+.item2footer{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.navfooter{
+    list-style-type: none;
+
+    display: flex;
+
+    height: 5px;
+    max-width: 250px;
+    min-width: 200px;
+
+    flex:1;
+}
+
+.navitem{
+    height: 100%;
+    flex:1 0 40px;
+
+    background-color: rgba(181,181, 181, 1);
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.active, .navitem:hover{
+    background-color: #000000;
+}
+
+/*-----------------------ABOUT-----------------------*/
+
+.about{
+    height: 100vh;
+    width: 100%;
+
+}
+
+.container-about{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.about-0, .about-2, .about-1, .about-3{
+    flex: 1;
+    height: 50%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    padding: 2rem;
+}
+
+.aboutheader{
+    margin-bottom: auto;
+    
+    
+}
+
+.aboutheader h1{
+    margin-bottom: auto;
+    font-size: 3rem;
+    margin-top: 0;
+    
+}
+
+.aboutheader h4{
+    margin: 0;
+    font-family: 'catamaran';
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+progress{
+    height: 3px;
+    width: 100%;
+    background-color: #dedede;
+    margin: 0.5rem 0;
+}
+
+progress::-webkit-progress-bar{
+    background-color: #dedede;
+}
+
+progress::-webkit-progress-value{
+    background-color: #ff0000;
+}
+
+/*-----------------------TEAM-----------------------*/
+
+.team{
+    height: 100vh;
+    width: 100%;
+    
+}
+
+.container-team{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.team-header{
+    width: 100%;
+    flex:2;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.team-slider{
+    width: 100%;
+    flex: 5;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.section-name h1{
+    font-size: 3rem;
+    font-family: 'catamaran';
+    margin-top: 0;
+}
+
+.section-name h4,span.legend{
+    font-size: 1.2rem;
+    color: #000000;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+
+.slider-card {
+    flex: 0 0 70%; 
+    height: 70%;
+    display: flex;
+    gap: 3rem;
+}
+
+.card {
+    flex: 1;
+}
+
+.card1, .card2, .card3{
+    height: 90%;
+    background-color: black;
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.card1{
+    background-image: url(assets/img/img1.jpg);
+}
+
+
+.card2{
+    background-image: url(assets/img/img3.jpg);
+}
+
+
+.card3{
+    background-image: url(assets/img/img2.jpg);
+}
+
+.card footer{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.2rem;
+    
+}
+
+/*-----------------------WORKS-----------------------*/
+
+.works{
+    height: 100vh;
+    width: 100%;
+
+    
+
+}
+
+.container-works{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.works-header{
+    width: 100%;
+    flex:2;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.works-body {
+    width: 100%;
+    flex: 5;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.workizda{
+    flex:1;
+    height: 100%;
+    background-image: url(/assets/img/img4.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 
 
 }
 
-.suscribe a{text-decoration: none;
-    color: white;}
+.workdcha{
+flex:1;
+height: 100%;
 
-.earbutton {
-background-color: black;
-height: 40px;
-width: 40px;
-position: absolute;
-bottom: 0;
+display: flex;
+flex-flow: column nowrap;
+justify-content: center;
+}
+
+.workarriba{
+    flex:1;
+    width: 100%;
+
+    background: #000000;
+    color: #fff;
+    font-size: 2rem;
+    text-transform: uppercase;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.workabajo{
+    flex:3;
+    width: 100%;
+
+    background-image: url(/assets/img/img8.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/*-----------------------WORKS1-----------------------*/
+
+.works1{
+    height: 100vh;
+    width: 100%;
+
+    
 
 }
 
-    .earbutton svg {
-margin-top: 15px;
-margin-left: 8px;
-    }
+.works1-container{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.works1-fila2{
+    flex:1;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.witem3{
+    flex:1;
+    height: 100%;
+
+    background: #000000;
+    color: #fff;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.witem3 p{
+    margin: 0;
+
+}
+
+.witem4{
+    flex:1;
+    height: 100%;
+    background: #fff;
+    color: #000000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #fff;
+    color: #000000;
+
+}
+
+.witem4 p{
+    margin: 0;
+    padding: 20px;
+}
 
 
-    /*----------------------SLIDER NAV   ----------------------*/
 
-    .item2footer {
-        width: 100%;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-items: center;
-    }
+.works1-fila1{
+    flex:4;
+    width: 100%;
 
-    .navfooter {
-        list-style-type: none;
-        display: flex;
-        height: 5px;
-        max-width: 250px;
-        min-width: 200px;
-        flex: 1;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    .navitem {
-        height: 100%;
-        flex: 1 0 40px;
-        background-color: rgba(181,181,181,1);
-        cursor: pointer;
+}
+.subtitle{
+    text-transform: none;
+    text-transform: lowercase;
+    font-size: 1.5rem;
+}
+
+.witem1{
+    flex:1;
+    height: 100%;
+
+    background-image: url(/assets/img/img5.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.witem2{
+    flex:1;
+    height: 100%;
+
+    background-image: url(/assets/img/img10.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/*-----------------------WORKS2-----------------------*/
+
+.works2{
+    height: 100vh;
+    width: 100%;
+
+    
+
+}
+
+.works2-container{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.works2-fila2{
+    flex:1;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.witem7{
+    flex:1;
+    height: 100%;
+
+    background: #000000;
+    color: #fff;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.witem7 p{
+    margin: 0;
+
+}
+
+.witem8{
+    flex:1;
+    height: 100%;
+    background: #fff;
+    color: #000000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #fff;
+    color: #000000;
+
+}
+
+.witem8 p{
+    margin: 0;
+    padding: 20px;
+}
+
+
+
+.works2-fila1{
+    flex:4;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.subtitle{
+    text-transform: none;
+    text-transform: lowercase;
+    font-size: 1.5rem;
+}
+
+.witem5{
+    flex:1;
+    height: 100%;
+
+    background-image: url(/assets/img/img3.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.witem6{
+    flex:1;
+    height: 100%;
+
+    background-image: url(/assets/img/img2.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/*-----------------------SERVICES-----------------------*/
+
+.services{
+    height: 100vh;
+    width: 100%;
+
+    
+
+}
+
+.services-container{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.services-header{
+    width: 100%;
+    flex:2;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.services-body {
+    width: 60%;
+    flex: 5;
+
+    display: flex;
+    flex-flow: row wrap;
+    
+}
+
+.ser{
+    flex:1 0 50%;
+    position: relative;
+
+    padding: 2rem;
+}
+
+.ser p:first-child{
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+
+.ser p:last-child{
+    line-height: 1.5em;
+}
+
+.ser1, .ser2{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+
+}
+
+.ser1 p, .ser3 p{
+    text-align: right;
+
+}
+
+.ser1::before{
+    content:"";
+    border: 1px solid #414141;
+    position: absolute;
+
+    width:80%;
+
+    bottom:0;
+    right:2rem;
+
+}
+
+.ser2::before{
+    content:"";
+    border: 1px solid #414141;
+    position: absolute;
+
+    height:80%;
+
+    left:0;
+    bottom:2rem;
+
+}
+
+.ser3::before{
+    content:"";
+    border: 1px solid #414141;
+    position: absolute;
+
+    height:80%;
+
+    right:0;
+    top:2rem;
+
+   
+}
+
+.ser4::before{
+    content:"";
+    border: 1px solid #414141;
+    position: absolute;
+
+    width:80%;
+
+    top:0;
+    left:2rem;
+
+   
+}
+
+/* ------------------------------NEWS---------------------- */
+
+.news  {
+    flex: 2;
+    width: 100%;
+    height: 100vh;
+}
+
+.news-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.news-header{
+
+    width: 100%;
+    flex:2;
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+}
+
+.news-body{
+    flex: 5;
+    width: 60%;
+
+    display: flex;
+
+}
+
+.news-foto{
+    flex: 4;
+    height: 80%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-texto{
+    flex: 8;
+    height: 60%;
+    padding: 2rem;
+}
+
+.newspic {
+    flex: 5;
+    width: 100%;
+    background-image: url(/assets/img/img2.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.newsnav {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.sldopt {
+    height: 4px;
+    flex:  1 0 40px;
+
+    
+    cursor: pointer;
+    background-color: #646464;
+
     margin-right: 5px;
-    }
+}
 
-    .active, .navitem:hover {
-        background-color: black;
-    }
+.title {
+    font-size: 3rem;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+}
 
-    /* ------------------------ ABOUT ---------------------- */
+/*-----------------------QUOTE-----------------------*/
 
-    .about {
-  height: 100vh;
-  width: 100%;
-  background: rgba(190, 190, 190, 0.3);
-    }
+.quote{
+    height: 100vh;
+    width: 100%;
 
-    .container-about {
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-    }
+    padding: 5%;
 
-    .about-0, .about-1, .about-2, .about-3 {
-        flex: 1;
-        height: 50%;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: flex-end;
-        padding: 2rem;
-    }
-    .aboutheader{
-        justify-content: space-between;
-        margin-bottom: auto;
-    }
-    .aboutheader h1 {
-        font-family: Righteous;
-        font-size: 3rem;
-        margin-top: 0rem;
-    }
-    .aboutheader h4 {
-        margin-bottom: 0rem;
-        text-transform: uppercase;
-    }
+}
 
-    progress {
-        width: 100%;
-        height: 3px;
-        background-color: rgba(181,181,181,1);
-        border: 3px red; 
-    }
+.quote-container{
+    height: 100%;
+    
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(/assets/img/img6.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+}
+.myquote{
+    text-align: center;
+}
+
+.myquote .newsnav{
+
+}
+
+.quote-little{
+    color: #fff;
+    font-size: 1.8rem;
+}
 
 
-    .team{
-        height: 100vh;
-        width: 100%;
-        background: rgba(190, 190, 190, 0.3);
-    }
-    .container-team {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-flow:column nowrap;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .team-header {
-        width: 100%;
-        flex: 2;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    .aboutheader h1 {
-        font-family: righteous;
-        font-size: 3rem;
-        margin-top: 0rem;
-
-    }
-    .aboutheader h4, span.legend {
-        text-transform: uppercase;
-        font-size: 1.2rem;
-        margin: 0 auto;
-    }
+.quote-great{
+    color: #fff;
+    font-size: 2rem;
+}
