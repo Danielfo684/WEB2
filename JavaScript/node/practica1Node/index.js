@@ -7,7 +7,12 @@ app.use(cors())
 
 app.get('/', (req, res) => {
     const patata = {
-        saludo: 'Hola Mundo',
+        listado: [
+            { idioma : spanish, saludo: Hola },
+            { idioma : italian, saludo: Ciao },
+            { idioma : english, saludo: Hello },
+            { idioma : german, saludo: Hallo }
+        ]
     }
     res.send(patata)
 })
