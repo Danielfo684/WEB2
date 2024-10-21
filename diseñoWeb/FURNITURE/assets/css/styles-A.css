@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body
+ {
+
+
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+@font-face {
+    font-family: NouvelRegular;
+    src: url('/assets/fonts/NouvelRRegular.ttf');
+}
+@font-face {
+    font-family: NouvelLight;
+    src: url('/assets/fonts/NouvelRLight.ttf');
+}
+@font-face {
+    font-family: NouvelBold;
+    src: url('/assets/fonts/NouvelRBold.ttf');
+}
+@font-face {
+    font-family: Signature;
+    src: url('/assets/fonts/PWSignaturetwo.ttf');
+}
