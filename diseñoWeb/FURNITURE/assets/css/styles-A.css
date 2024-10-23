@@ -1,33 +1,173 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-html {
-    margin: 0;
-    padding: 0;
+
+@font-face {
+    font-family: 'NouvelRegular'; ;
+    src: url(../fonts/NouvelRRegular.ttf);
+}
+
+@font-face {
+    font-family: 'NouvelRLight'; ;
+    src: url(../fonts/NouvelRLight.ttf);
+}
+
+@font-face {
+    font-family: 'NouvelRBold'; ;
+    src: url(../fonts/NouvelRBold.ttf);
+}
+
+
+html,body{
+height: 100%;
+width: 100%;
+}
+    
+*{
+box-sizing:border-box;
+}
+
+p{
+font-family: 'Montserrat', sans-serif;
+font-size: 1.1rem;
+line-height: 1.8rem;
+text-align: justify;
+}
+
+main{
+    width:100%;
+    height: auto;
+    padding:0 5% 5% 5%;
+}
+
+.hero-container{
+    width:100%;
     height: 100%;
-}
-body
- {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
 
-
-}
-
-p {
-    font-family: 'Montserrat', sans-serif;
+    margin-bottom:4rem;
 }
 
-@font-face {
-    font-family: NouvelRegular;
-    src: url('/assets/fonts/NouvelRRegular.ttf');
+header{
+width: 100%;
+height: 5vh;
+
+display: flex;
+flex-flow: row nowrap;
+justify-content: space-between;
+align-items: center;
+border: 1px solid black;
+
 }
-@font-face {
-    font-family: NouvelLight;
-    src: url('/assets/fonts/NouvelRLight.ttf');
+
+.motto-body{
+width: 100%;
+
+display:flex;
+flex-flow:row nowrap;
+justify-content: space-between;
+align-items: center;
+
+border: 1px solid black;
 }
-@font-face {
-    font-family: NouvelBold;
-    src: url('/assets/fonts/NouvelRBold.ttf');
+
+.mini-logo{
+    flex: 0 0 100px;
+    height:40px ;
+
+    background-image: url(../img/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
-@font-face {
-    font-family: Signature;
-    src: url('/assets/fonts/PWSignaturetwo.ttf');
+
+.burguer{
+    flex: 0 0 30px;
+    height:30px ;
+
+    background-image: url(../img/burguer.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.main-pic{
+    flex: 1 0 30%;
+    height: 80vh;
+
+    background-image: url(../img/hero.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.main-motto{
+    flex: 1 0 70%;
+    height: 100%vh;
+    align-items: flex-end;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+}
+
+
+.ghost{
+    flex: 1 0 20%;
+}
+
+
+.motto-center {
+    flex: 1 0 60%;
+    width: 100%;
+    border: 1px solid salmon;
+    margin: 5%;
+}
+
+.motto-footer{
+    flex: 1 0 60%
+}
+
+.maxi-logo{
+  width: auto;
+    height: 140px ;
+
+    background-image: url(../img/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.motto-text {
+    text-align: right;
+font-size: clamp(2rem, 4.5vw, 6rem);
+font-family: NouvelRBold;
+}
+.motto-text span{
+    font-size: clamp(2rem, 4.5vw, 6rem);
+    font-family: NouvelRBold;
+    color: #C10200;
+}
+
+.motto-subtitle {
+    text-align: right;
+    font-size: 1.2rem;
+    font-family: NouvelRLight;
+}
+
+.motto-legend {
+    display: flex;
+    justify-content: flex-start;
+}
+.line {
+    width: calc(100% - (clamp(2rem, 4.5vw, 6rem)));
+    
+    border: 1px solid #C10200;
+
+    top: 30%;
+}
+
+.motto-legend span:nth-child(13) {
+    
 }
