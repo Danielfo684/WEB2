@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mynerve&display=swap');
+
+@font-face {
+    font-family: 'Kamerik-Bold';
+    src: url(/assets/fonts/Kamerik\ 205\ Bold.ttf),
+}
+
+@font-face {
+    font-family: 'Kamerik-Heavy';
+    src: url(/assets/fonts/Kamerik\ 205\ Heavy.ttf),
+}
+
+@font-face {
+    font-family: 'Kamerik-Light';
+    src: url(/assets/fonts/Kamerik\ 205\ Light.ttf),
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: solid black;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+}
+
+
+/*-------------------HERO SECTION-------------------*/
+
+#heroSection {
+    background-image: url(/assets/images/hero-image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+header {
+    font-family: 'Montserrat';
+    font-size: 24px;
+    display: flex;
+    gap: 6%;
+    padding: 2% 3%;
+}
+
+header a {
+    text-decoration: none;
+    color: #FFFEFC;
+}
+
+#indexTitle {
+    color: #FFFEFC;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Kamerik-Heavy';
+    padding: 170px 140px 30px 140px;
+    display: inline-block;
+}
+
+#indexTitle h1 {
+    font-family: 'Kamerik-Heavy';
+    font-size: 150px;
+    color: #FFFEFC;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    line-height: normal;
+    margin: 0;
+    font-weight: 100;
+}
+
+
+#indexTitle h2 {
+    margin: 0;
+    font-family: 'Kamerik-Heavy';
+    font-size: 80px;
+    color: #FFFEFC;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-weight: 100;
+}
+
+#linedStructure {
+    display: flex;
+    width: auto;
+    flex-flow: column;
+}
+
+#linedSubtitle {
+    display: flex;
+
+    gap: 37px;
+    align-items: center;
+    margin: 0;
+    align-self: center;
+}
+
+#indexTitle h3 {
+    font-family: 'Kamerik-heavy';
+    font-size: 20px;
+    color: #FFFEFC;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 0;
+    font-weight: 100;
+
+}
+
+#indexTitle .line {
+    height: 3px;
+    background-color: #FFFEFC;
+    width: 230px;
+}
+
+.socialLinks {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-right: 50px;
+    width: 5%;
+    align-items: center;
+    float: right;
+}
+
+.socialIcon {
+    width: 34px;
+    padding: 14px;
+
+}
+
+/*--------------------MOTO SECTION-------------------*/
+
+#motoSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    padding: 100px;
+    gap: 65px;
+}
+
+#motoSection img {
+    width: 860px;
+    height: 574px;
+}
+
+#moto {
+    font-family: kamerik-bold;
+    display: flex;
+    width: 800px;
+    flex-flow: column;
+}
+
+#moto h1 {
+    font-size: 70px;
+    color: #3D3D3D;
+
+    margin: 0;
+    font-weight: 100;
+
+    display: inline-block;
+    padding: 36px 0;
+}
+
+#moto h1 span {
+    color: #265FA3;
+}
+
+#moto h2 {
+    font-size: 64px;
+    color: #3D3D3D;
+    margin: 0;
+    font-weight: 100;
+
+    display: inline-block;
+}
+
+#moto h3 {
+    font-size: 24px;
+    color: #3D3D3D;
+    margin: 0;
+    font-weight: 100;
+
+    width: 350px;
+}
+
+#first-part {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+
+#third-part {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+
+
+
+/*-------------------CONTENT SECTION-------------------*/
+
+.contentPage {
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    font-family: montserrat;
+}
+
+#contentSection1 {
+    background-image: url(/assets/images/climbing-wall.png);
+}
+#contentSection2 {
+    background-image: url(/assets/images/climbing-mountains.png);
+}
+
+
+.contentPage h1 {
+    font-family: 'Kamerik-bold';
+    font-size: 48px;
+    color: #265FA3;
+
+    font-weight: 100;
+
+}
+
+.gradient {
+    background: linear-gradient(90deg, #FFF 33.66%, rgba(255, 255, 255, 0.50) 67.37%, rgba(255, 255, 255, 0.00) 99.91%);
+    width: 960px;
+    height: 1080px;
+}
+#gradient2 {
+background: linear-gradient(90deg, #FFF 43.54%, rgba(255, 255, 255, 0.50) 74.92%, rgba(255, 255, 255, 0.00) 99.91%);
+float: right;
+width: 960px;
+height: 1081px;
+flex-shrink: 0;
+}
+
+.contentPage-text {
+    padding: 100px;
+}
+
+.contentPage-text p {
+    width: 550px;
+    font-size: 20px;
+}
+
+.contentPage-subtitle{
+    color: #000000;
+    font-family: Montserrat;
+    font-size: 32px;
+    width: 650px;
+}
+
+.contentPage-list {
+    width: 550px;
+    font-size: 20px;
+    position: relative;
+    right: 40px;
+}
