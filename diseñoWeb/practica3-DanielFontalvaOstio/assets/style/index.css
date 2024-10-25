@@ -14,7 +14,7 @@
     font-family: 'Kamerik-Light';
     src: url(/assets/fonts/Kamerik\ 205\ Light.ttf),
 }
-
+*margin: 0;
 html {
     margin: 0;
     padding: 0;
@@ -35,7 +35,7 @@ body {
 /*-------------------HERO SECTION-------------------*/
 
 #heroSection {
-    background-image: url(/assets/images/hero-image.png);
+    background-image: url(../images/hero-image.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -55,7 +55,7 @@ header a {
     color: #FFFEFC;
 }
 
-#indexTitle {
+.indexTitle {
     color: #FFFEFC;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: 'Kamerik-Heavy';
@@ -63,7 +63,7 @@ header a {
     display: inline-block;
 }
 
-#indexTitle h1 {
+.indexTitle h1 {
     font-family: 'Kamerik-Heavy';
     font-size: 150px;
     color: #FFFEFC;
@@ -74,7 +74,7 @@ header a {
 }
 
 
-#indexTitle h2 {
+.indexTitle h2 {
     margin: 0;
     font-family: 'Kamerik-Heavy';
     font-size: 80px;
@@ -83,13 +83,13 @@ header a {
     font-weight: 100;
 }
 
-#linedStructure {
+.linedStructure {
     display: flex;
     width: auto;
     flex-flow: column;
 }
 
-#linedSubtitle {
+.linedSubtitle {
     display: flex;
 
     gap: 37px;
@@ -98,7 +98,7 @@ header a {
     align-self: center;
 }
 
-#indexTitle h3 {
+.indexTitle h3 {
     font-family: 'Kamerik-heavy';
     font-size: 20px;
     color: #FFFEFC;
@@ -108,7 +108,7 @@ header a {
 
 }
 
-#indexTitle .line {
+.indexTitle .line {
     height: 3px;
     background-color: #FFFEFC;
     width: 230px;
@@ -213,6 +213,7 @@ header a {
 #contentSection1 {
     background-image: url(/assets/images/climbing-wall.png);
 }
+
 #contentSection2 {
     background-image: url(/assets/images/climbing-mountains.png);
 }
@@ -228,16 +229,16 @@ header a {
 }
 
 .gradient {
-    background: linear-gradient(90deg, #FFF 33.66%, rgba(255, 255, 255, 0.50) 67.37%, rgba(255, 255, 255, 0.00) 99.91%);
+    background: linear-gradient(90deg, #FFF 34%, rgba(255, 255, 255, 0.50) 67%, rgba(255, 255, 255, 0.00) 100%);
     width: 960px;
-    height: 1080px;
+    height: 100vh;
 }
+
 #gradient2 {
-background: linear-gradient(90deg, #FFF 43.54%, rgba(255, 255, 255, 0.50) 74.92%, rgba(255, 255, 255, 0.00) 99.91%);
-float: right;
-width: 960px;
-height: 1081px;
-flex-shrink: 0;
+    background: linear-gradient(-90deg, #FFF 44%, rgba(255, 255, 255, 0.00) 100%, rgba(255, 255, 255, 0.50) 75%);
+    float: right;
+    width: 960px;
+    height: 100vh;
 }
 
 .contentPage-text {
@@ -247,9 +248,11 @@ flex-shrink: 0;
 .contentPage-text p {
     width: 550px;
     font-size: 20px;
+    line-height: 30px;
+    /* 150% */
 }
 
-.contentPage-subtitle{
+.contentPage-subtitle {
     color: #000000;
     font-family: Montserrat;
     font-size: 32px;
@@ -261,4 +264,96 @@ flex-shrink: 0;
     font-size: 20px;
     position: relative;
     right: 40px;
+}
+
+#reachingSection {
+    background-image: url(/assets/images/alaska2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+
+}
+
+#reachingSection h1 {	
+    color: #464646;
+
+}
+#reachingSection h3 {	
+    color: #464646;
+
+}
+
+#reachingSection .line2 {
+    height: 3px;
+    background-color: #464646;
+    width: 230px;
+}
+
+#secondTitle {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+padding: 0px;
+
+}
+
+#lastSection {
+    margin: 0;
+    padding: 0;
+}
+
+#lastSection img{
+    width: 100%;
+}
+
+
+footer {
+    background-color: #E8E8E8;
+}
+#footerStructure {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 100px;
+}
+.footerBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.footerTitle {
+    color: #464646;
+font-family: Montserrat;
+font-size: 32px;
+font-weight: 500;
+text-decoration-line: underline;
+}
+footer p {
+    color: #464646;
+font-family: Montserrat;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.footerOptionCouple {
+    display: flex;
+    
+}
+.footerOptionCouple img {
+  width: 24px;
+  height: 24px;
+}
+.footerOptionCouple p {
+    margin: 0 15px;
+  width: 24px;
+  height: 24px;
+}
+
+#footerSocialLinks {
+    color: #464646;
 }
