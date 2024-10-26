@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mynerve&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    padding: 100px 50px;
+}
+
+button {
+    cursor: pointer;
+}
+
+#notesSection {
+    border-radius: 10px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+#noteCreator {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-grow: 0.3;
+    align-items: center;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    margin: 10px;
+    height: 100%;
+}
+#noteCreatorForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+#titleSection {
+    border-bottom: 1px solid rgb(79, 79, 79);
+    width: 100%;
+    text-align: center;
+    background-color: rgb(224, 224, 224);
+    border-radius: 5px 5px 0 0;
+}
+
+#noteCreatorTitle {
+    margin: 10px 0;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(79, 79, 79);
+    width: 100%;
+    font-size: 15px;
+}
+
+#noteCreator button {
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(79, 79, 79);
+    background-color: #4CAF50;
+    color: white;
+}
+
+#noteCreator button:hover {
+    background-color: #45a049;
+}
+
+#noteCreator h1 {
+    font-size: 2rem;
+}
+
+
+#noteNewContent {
+    height: 150px;
+    width: 100%;
+    border: 1px solid rgb(79, 79, 79);
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+#notesList {
+    border-radius: 1;
+    display: flex;
+    flex-flow: column;
+    flex-grow: 0.3;
+}
+
+#note {
+    border: 1px solid rgb(156, 156, 156);
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+#note h1 {
+    font-size: 1.5rem;
+
+}
+
+#noteManagement {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+#noteManagement button {
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(79, 79, 79);
+    width: 70px;
+    color: white;
+
+}
+
+#noteEdit {
+    background-color: rgb(92, 144, 182);
+}
+
+#noteEdit :hover {
+    background-color: rgb(64, 110, 143);
+}
+
+#noteDelete {
+    background-color: rgb(194, 96, 96);
+
+}
+
+#noteDelete :hover {
+    background-color: rgb(169, 79, 79);
+}
+
+#noteDateAssigned {
+    font-size: 1.5rem;
+}
+
+#flexTitle {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    ;
+}

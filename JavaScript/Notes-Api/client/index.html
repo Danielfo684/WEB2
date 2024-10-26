@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/style/index.css">
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <div id="notesSection">
+        <div id="noteCreator">
+            <div id="titleSection">
+                <h1>Create a Note</h1>
+            </div>
+            <form id="noteCreatorForm">
+                <input type="text" id="noteCreatorTitle" name="title" placeholder="Title" required>
+                <textarea id="noteNewContent" name="content" placeholder="Content" required></textarea>
+                <div id="importanceSelectorSection">
+                    <input type="radio" id="noteImportanceStandard" name="typeSelector" value="false" checked>
+                    <label for="noteImportanceStandard">Standard</label>
+                    <input type="radio" id="noteImportanceCrit" name="typeSelector" value="true">
+                    <label for="noteImportanceCrit">Critical</label>
+                    <input type="date" id="noteDate" name="finalDate">
+                </div>
+                <button type="submit" id="submit-Note">Create Note</button>
+            </form>
+        </div>
+        <div id="notesList">
+            <div id="note">
+                <div id="flexTitle">
+                <h1 id="noteTitle"></h1>
+                <p id="noteDateAssigned"></p>
+            </div>
+                <p id="noteContent"></p>
+               
+                <div id="noteManagement">
+                    <button id="noteEdit">Edit</button>
+                    <button id="noteDelete">Delete</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <script type="module" src="assets/js/index.js"></script>
+</body>
+
+</html>
