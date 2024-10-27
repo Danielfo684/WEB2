@@ -14,7 +14,14 @@
     font-family: 'Kamerik-Light';
     src: url(/assets/fonts/Kamerik\ 205\ Light.ttf),
 }
-*margin: 0;
+:root {
+    --colorGrey: #464646;
+    --colorBlue: #265FA3;
+    --colorWhite: #FFFEFC;
+}
+
+
+
 html {
     margin: 0;
     padding: 0;
@@ -27,7 +34,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-color: #f5f5f5;
 }
 
@@ -42,77 +49,10 @@ body {
     height: 100vh;
 }
 
-header {
-    font-family: 'Montserrat';
-    font-size: 24px;
-    display: flex;
-    gap: 6%;
-    padding: 2% 3%;
-}
-
-header a {
-    text-decoration: none;
-    color: #FFFEFC;
-}
-
 .indexTitle {
-    color: #FFFEFC;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-family: 'Kamerik-Heavy';
     padding: 170px 140px 30px 140px;
-    display: inline-block;
 }
 
-.indexTitle h1 {
-    font-family: 'Kamerik-Heavy';
-    font-size: 150px;
-    color: #FFFEFC;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    line-height: normal;
-    margin: 0;
-    font-weight: 100;
-}
-
-
-.indexTitle h2 {
-    margin: 0;
-    font-family: 'Kamerik-Heavy';
-    font-size: 80px;
-    color: #FFFEFC;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-weight: 100;
-}
-
-.linedStructure {
-    display: flex;
-    width: auto;
-    flex-flow: column;
-}
-
-.linedSubtitle {
-    display: flex;
-
-    gap: 37px;
-    align-items: center;
-    margin: 0;
-    align-self: center;
-}
-
-.indexTitle h3 {
-    font-family: 'Kamerik-heavy';
-    font-size: 20px;
-    color: #FFFEFC;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin: 0;
-    font-weight: 100;
-
-}
-
-.indexTitle .line {
-    height: 3px;
-    background-color: #FFFEFC;
-    width: 230px;
-}
 
 .socialLinks {
     display: flex;
@@ -133,11 +73,12 @@ header a {
 
 #motoSection {
     display: flex;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    margin-top: 200px;
+    margin: 100px 0 100px 0;
     padding: 100px;
-    gap: 65px;
+
 }
 
 #motoSection img {
@@ -164,7 +105,7 @@ header a {
 }
 
 #moto h1 span {
-    color: #265FA3;
+    color: var(--colorBlue);
 }
 
 #moto h2 {
@@ -222,7 +163,7 @@ header a {
 .contentPage h1 {
     font-family: 'Kamerik-bold';
     font-size: 48px;
-    color: #265FA3;
+    color: var(--colorBlue);
 
     font-weight: 100;
 
@@ -272,21 +213,23 @@ header a {
     background-repeat: no-repeat;
     background-position: center;
     height: 100vh;
+    padding: 100px;
 
 }
 
-#reachingSection h1 {	
-    color: #464646;
+#reachingSection h1 {
+    color: var(--colorGrey);
 
 }
-#reachingSection h3 {	
-    color: #464646;
+
+#reachingSection h3 {
+    color: var(--colorGrey);
 
 }
 
 #reachingSection .line2 {
     height: 3px;
-    background-color: #464646;
+    background-color: var(--colorGrey);
     width: 230px;
 }
 
@@ -295,65 +238,88 @@ header a {
     align-content: center;
     align-items: center;
     justify-content: center;
-padding: 0px;
+    padding: 0px;
+    text-align: center;
 
 }
 
 #lastSection {
     margin: 0;
     padding: 0;
+height: 100vh;
 }
 
-#lastSection img{
+#lastSection img {
     width: 100%;
 }
 
+#lastSection-text {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+    padding: 3%;
+    align-items: center;
+    align-content: center;
+}
+
+#lastSection-firstText {
+    width: 600px;
+}
+
+#lastSection-firstText h1 {
+    color: var(--colorBlue);
+    font-size: 48px;
+    font-family: kamerik-bold;
+    font-weight: 100;
+}
+
+#lastSection-secondText {
+
+    width: 600px;
+}
+
+#lastSection-secondText h2 {
+
+    font-size: 32px;
+}
 
 footer {
     background-color: #E8E8E8;
 }
-#footerStructure {
-    display: flex;
-    justify-content: space-around;
-    padding: 50px 100px;
+.footerBox a {
+    color: var(--colorGrey);
 }
-.footerBox {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-}
+
 .footerTitle {
-    color: #464646;
-font-family: Montserrat;
-font-size: 32px;
-font-weight: 500;
-text-decoration-line: underline;
-}
-footer p {
-    color: #464646;
-font-family: Montserrat;
-font-size: 20px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+    color: var(--colorGrey);
 }
 
-.footerOptionCouple {
-    display: flex;
-    
-}
-.footerOptionCouple img {
-  width: 24px;
-  height: 24px;
-}
-.footerOptionCouple p {
-    margin: 0 15px;
-  width: 24px;
-  height: 24px;
+
+
+
+
+
+
+#footerSocialLinks{
+    color: var(--colorGrey);
+
 }
 
-#footerSocialLinks {
-    color: #464646;
+
+#indexTitleFooter h2 {
+    color: var(--colorGrey);
+}
+
+#linedSubtitleFooter h3 {
+    color: var(--colorGrey);
+}
+
+.line2 {
+    background-color: var(--colorGrey);
+  
+}
+
+#linedStructureFooter h1 {
+    color: var(--colorGrey);
 }

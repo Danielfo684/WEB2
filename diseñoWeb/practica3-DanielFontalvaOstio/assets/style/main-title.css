@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mynerve&display=swap');
+
+@font-face {
+    font-family: 'Kamerik-Bold';
+    src: url(/assets/fonts/Kamerik\ 205\ Bold.ttf),
+}
+
+@font-face {
+    font-family: 'Kamerik-Heavy';
+    src: url(/assets/fonts/Kamerik\ 205\ Heavy.ttf),
+}
+
+@font-face {
+    font-family: 'Kamerik-Light';
+    src: url(/assets/fonts/Kamerik\ 205\ Light.ttf),
+}
+.indexTitle {
+    color: #FFFEFC;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Kamerik-Heavy';
+   
+    display: inline-block;
+}
+
+.indexTitle h1 {
+    font-family: 'Kamerik-Heavy';
+    font-size: 150px;
+    color: #FFFEFC;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    line-height: normal;
+    margin: 0;
+    font-weight: 900;
+}
+
+
+.indexTitle h2 {
+    margin: 0;
+    font-family: 'Kamerik-Heavy';
+    font-size: 80px;
+    color: var(--colorWhite);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-weight: 100;
+}
+
+.linedStructure {
+    display: flex;
+    width: auto;
+    flex-flow: column;
+}
+
+.linedSubtitle {
+    display: flex;
+
+    gap: 37px;
+    align-items: center;
+    margin: 0;
+    align-self: center;
+}
+
+.indexTitle h3 {
+    font-family: 'Kamerik-heavy';
+    font-size: 20px;
+    color: var(--colorWhite);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 0;
+    font-weight: 100;
+
+}
+
+.indexTitle .line {
+    height: 3px;
+    background-color: var(--colorWhite);
+    width: 230px;
+}
