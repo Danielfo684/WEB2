@@ -17,13 +17,13 @@ export class NoteHandler {
             })
     }
 
-    postData(data) {
-        fetch(`${this._url}`, {
+     postData(data) {
+          fetch(`${this._url}`, {
             method: 'POST',
-            header: {
+            headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify(data)
+            body: JSON.stringify(data),
         }).then((response) => {
             if (response.ok) {
                 console.log('Note json created');
@@ -32,4 +32,5 @@ export class NoteHandler {
             }
         })
     }
+  
 }

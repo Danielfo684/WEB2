@@ -108,7 +108,7 @@ button {
 
 }
 
-#noteManagement {
+/* #noteManagement {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -123,7 +123,7 @@ button {
     width: 70px;
     color: white;
 
-}
+} */
 
 #noteEdit {
     background-color: rgb(92, 144, 182);

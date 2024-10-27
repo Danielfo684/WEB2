@@ -4,7 +4,6 @@ export class Note {
         this._content = content;
         this._importance = importance;
         this._date = date;
-        console.log('Note object created');
     }
 
     get title() {
@@ -33,4 +32,5 @@ export class Note {
     set date(date) {
         this._date = date;
     }
+
 }

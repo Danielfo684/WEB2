@@ -2,11 +2,11 @@ import {NoteHandler} from "./NoteHandler.js"
 
 
 export const Connection = {
-    connection : null,
+    instance : null,
     getInstance: (url) => {
-if (Connection.connection === null) {
-    Connection.connection = new NoteHandler(url);
+if (Connection.instance === null) {
+    Connection.instance = new NoteHandler(url);
 }
-return Connection.connection;
+return Connection.instance;
     }
 }
