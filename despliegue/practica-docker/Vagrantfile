@@ -13,6 +13,6 @@ config.vm.synced:folder "htdocs", "/var/www/app.127.0.0.1.nip.io/html"
   cp -v /vagrant/app.127.0.0.1.nip.io.conf /etc/apachw2/sites-available
   mkdir -p /var/www/app.127.0.0.1.nip.io/html
 a2ensite app.127.0.0.1.nip.io.conf
-  systemctl resatrt apache2
+  systemctl restart apache2
   SHELL
 end
