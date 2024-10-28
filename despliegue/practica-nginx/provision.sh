@@ -1,23 +1,22 @@
 apt update -y
 apt install -y nginx git
 
+ systemctl enable nginx  
+ systemctl start nginx    
 
-sudo systemctl enable nginx  
-sudo systemctl start nginx    
-
-sudo mkdir -p /var/www/daninginx/html
+ mkdir -p /var/www/daninginx/html
 
 
-sudo git clone https://github.com/cloudacademy/static-website-example /var/www/daninginx/html
+ git clone https://github.com/cloudacademy/static-website-example /var/www/daninginx/html
 
-sudo chown -R www-data:www-data /var/www/daninginx/html
-sudo chmod -R 755 /var/www/daninginx
+ chown -R www-data:www-data /var/www/daninginx/html
+ chmod -R 755 /var/www/daninginx
 
 
 cp /vagrant/daninginx.conf /etc/nginx/sites-available/daninginx
 
 
-sudo nginx -t
+ nginx -t
 
 
-sudo systemctl restart nginx
+ systemctl restart nginx
