@@ -80,11 +80,12 @@ sudo systemctl restart nginx
 Este paso es fundamental para que funcione: debe modificarse el archivo añadiendo la IP y la dirección web del servidor
 ```
 192.168.10.15 www.daninginx.test
+192.168.10.15 www.danijugger.test
 ```
 - Esto permite que tu ordenador reconozca el dominio.
 
 ### Verificación del sitio web
-INCLUIR IMAGEN
+![Funcionamiento de nginx con el repositorio del profesor](./images/daninginx.test-working.png.jpg)
 
 ### Crear un Segundo Directorio de Sitio Web y asignarle permisos
 ```bash

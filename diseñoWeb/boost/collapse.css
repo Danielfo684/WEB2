@@ -1,0 +1,71 @@
+.nav-bar {
+    width: 30px;
+    height: 30px;
+
+    margin-left: auto;
+}
+
+.nav-bar span {
+    position: absolute;
+    height: 3px;
+    width: 50%;
+    background-color: black;
+    transition: .3s ease-out;
+    transform: rotate(0deg);
+}
+
+.nav-bar span:nth-child(even) {
+    left: 50%;
+    
+}
+.nav-bar span:nth-child(odd) {
+    left: 0%;
+
+}
+
+.nav-bar span:nth-child(1),
+.nav-bar span:nth-child(2) {
+    top: 0;
+}
+.nav-bar span:nth-child(3),
+.nav-bar span:nth-child(4) {
+    top: 9px;
+}
+.nav-bar span:nth-child(5),
+.nav-bar span:nth-child(6) {
+    top: 18px;
+}
+
+.nav-bar.open span:nth-child(3) {
+    left: -50%;
+    opacity: 0;
+
+}
+.nav-bar.open span:nth-child(4) {
+
+    left: 100%;
+opacity: 0;
+}
+.nav-bar.open span:nth-child(1) {
+  transform: rotate(45deg);
+  left: 5px;
+  top: 7px;
+}
+.nav-bar.open span:nth-child(2) {
+
+    transform: rotate(-45deg);
+    top: 7px;
+    left: calc(50% - 2px);
+
+}
+.nav-bar.open span:nth-child(5) {
+    transform: rotate(-45deg);
+top: 14px;
+left: 5px;
+}
+.nav-bar.open span:nth-child(6) {
+
+    transform: rotate(45deg);
+    top: 14px;
+    left: calc(50% - 2px);
+}

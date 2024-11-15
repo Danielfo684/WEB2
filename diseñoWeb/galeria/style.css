@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    padding: 2rem;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid red;
+    columns: 3 300px;
+
+
+}
+
+img {
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+    border-image: fill 0 linear-gradient( black, rgb(243, 243, 243)) ;
+}
+
+.overlay {
+    width: 100%;
+    height: 200px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/15968.webp);
+    background-size: cover;
+    border-image: fill 0 linear-gradient(#0003, #000);
+    color: white;
+    font-size: 2rem;
+    align-items: flex-end;
+}
