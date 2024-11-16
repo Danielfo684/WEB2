@@ -1,0 +1,48 @@
+footer {
+    display: flex;
+padding: 100px 200px 50px 200px;
+justify-content: space-between;
+align-items: flex-start;
+align-self: stretch;
+box-sizing: border-box;
+color: white;
+flex-flow: row wrap;
+}
+
+.footer-section {
+    display: flex;
+width: 338px;
+flex-direction: column;
+align-items: flex-start;
+gap: 40px;
+margin-bottom: 40px;
+}
+
+.footer-title {
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+.footer-content {
+    display: flex;
+    font-size: 1rem;
+    gap: 16px;
+}
+
+.footer-awards {
+    display: flex;
+    width: 492px;
+    flex-direction: column;
+    align-items: center;
+    gap: 44px;
+}
+.footer-section a {
+    cursor: pointer;
+}
+
+#footer-awards-images {
+    display: flex;
+    align-items: center;
+    gap: 104px;
+    align-self: stretch;
+    justify-content: center;
+}

@@ -7,6 +7,8 @@
     --medium-text: font-size: 1.5rem;
     --title-text: font-size: 2rem;
     --p-text: font-size: 1rem;
+    --grey-dark: #707070;
+    --black-half: #9c9c9c60;
 }
 
 html {
@@ -48,6 +50,7 @@ transition: .2s;
     background-color: var(--darkgreen);
     color: black;
     border-radius: 5px;
+    letter-spacing: 2px;
 }
 
 .button a {
@@ -160,6 +163,7 @@ align-self: stretch;
     color: white;
     font-size: 4rem;
  font-style: italic;
+ text-align: center;
 }
 .hanging-subtitle {
     color: white;
