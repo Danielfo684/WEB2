@@ -11,16 +11,15 @@ nav {
     max-height: 100px;
     backdrop-filter: blur(8px); /* glassmorphing */
     position: fixed;
-    width: 100%;
+    width: 100vw;
     box-sizing: border-box;
     z-index: 1000;
+    min-height: 50px;
 }
-@keyframes white-to-black {
-    100% {
-        color: black;
-    }
-}
-
+ nav > a {
+    text-decoration: none;
+    color: white;
+ }
 .logo {
     flex: 2;
     font-family: Audiowide;
@@ -47,11 +46,7 @@ nav {
     padding: 0.7rem 1.4rem;
     transition: .2s;
 }
-#header-button:hover {
-    background-color: var(--darkgreen);
-    color: black;
-    border-radius: 5px;
-}
+
 
 .menu-on {
     display: flex;
@@ -74,7 +69,7 @@ nav {
     transition: 0.2s;
     border-radius: 35px;
 }
-.menu-on-nav li a:hover {
+.nav-link:hover {
     border-radius: 5px;
     background-color: var(--green);
     color: black;
@@ -106,7 +101,7 @@ align-items: center;
 
 #social-icons a img:hover {
     border-radius: 15px;
-    background-color: rgb(182, 182, 182);
+    background-color: rgba(182, 182, 182, 0.4);
 }
 
 .nav-bar {
@@ -196,12 +191,13 @@ align-items: center;
     .menu-mobile {
         display: block;
         width: 100%;
-        height: 90vh;
+        height: 95vh;
         background-color: rgba(0, 0, 0, 0.9);
         position: fixed;
-
+       
+top: 50px;
         left: 0;
-        top: 4.6rem;
+   
         animation: fade-in-mobile .3s ease-in;
 
     }
@@ -221,13 +217,18 @@ align-items: center;
         flex-flow: column nowrap;
         justify-content: space-around;
         align-items: center;
-        height: 100%;
-        padding: 5rem 0;
+        height: 90vh;
+        padding: 1rem 0;
     }
 
     .menu-mobile .menu-on-nav li a {
-        color: white;
         font-size: 2rem;
         animation: none;
     }
+   .menu-on-nav .button a {
+        font-size: 2rem;
+    }
+.menu-on-nav li a:hover {
+    color: black;
+
 }
