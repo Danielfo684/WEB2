@@ -28,7 +28,7 @@ gap: 60px;
     font-weight: 400;
     line-height: normal;
     color: white;
-    
+    transition: 0.5s;
 }
 
 
@@ -52,7 +52,6 @@ color: var(--green);
     font-style: italic;
 }
 #hero-buttons .button{
-  font-family: AudioWide, sans-serif;
 padding: 24px;
 align-items: center;
 cursor: pointer;

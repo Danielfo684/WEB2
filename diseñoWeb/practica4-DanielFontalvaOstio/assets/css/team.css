@@ -10,12 +10,17 @@
 }
 
 
+
 #team-main-title {
     color: white;
     font-size: 5rem;
     font-family: Poppins;
-    font-style: italic;
     font-weight: 700;
+    text-align: center;
+}
+
+#team-main-title span {
+    color: var(--green);
 }
 
 #crew-section {
@@ -59,6 +64,81 @@ align-self: stretch;
     columns: 2 500px;
 }
 
+
+
+
+.member {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    width: auto;
+    margin-bottom: 50px;
+    transition: transform 0.5s ease; /* Transición para el escalado */
+}
+
+.member:hover {
+    transform: scale(1.1); /* Escalar el contenedor */
+
+}
+
+.member-text {
+    color: white;
+    font-size: 1rem;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    text-align: center;
+    width: 40ch;
+    opacity: 0; /* Inicia oculto con opacidad */
+    transition: opacity 0.5s ease; /* Transición suave de opacidad */
+    height: auto; /* Asegura que mantenga su espacio */
+}
+
+.member:hover .member-text {
+    opacity: 1; /* Aparece suavemente */
+}
+
+.member > img {
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+}
+
+.member-name {
+    color: white;
+    font-size: 1.5rem;
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    border-bottom: 1px solid white;
+}
+
+.member-position {
+    color: white;
+    font-size: 1rem;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+}
+
+.member-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.member-social a img {
+    padding: 5px;
+    transition: background-color 0.3s ease, border-radius 0.3s ease; /* Suaviza el hover */
+}
+
+.member-social a img:hover {
+    border-radius: 5px;
+    background-color: rgba(182, 182, 182, 0.4);
+}
+
+
+/* 
 .member {
     display: flex;
     flex-direction: column;
@@ -67,9 +147,14 @@ align-self: stretch;
     gap: 16px;
 width: auto;
 margin-bottom:  50px;
-
+transition: .5s ease;
 }
-
+.member:hover {
+  transform: scale(1.1);
+}
+.member:hover  .member-text{
+display: block;
+  }
 .member > img {
     width: 400px;
     height: 400px;
@@ -95,6 +180,7 @@ margin-bottom:  50px;
     font-weight: 400;
     text-align: center;
     width: 40ch;
+    display: none;
 }
 .member-social {
     display: flex;
@@ -109,4 +195,4 @@ margin-bottom:  50px;
 .member-social a img:hover {
     border-radius: 5px;
     background-color: rgba(182, 182, 182, 0.4);
-}
+} */
