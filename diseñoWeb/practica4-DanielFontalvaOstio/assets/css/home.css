@@ -38,7 +38,7 @@ color: var(--green);
     
 }
 #hero-section-content p{
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     font-family: Montserrat, sans-serif;
     font-weight: 400;
     line-height: 1.5;
@@ -109,11 +109,11 @@ cursor: pointer;
     }
 
     #hero-section-content p {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 
     #hero-section-content h2 {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     #hero-buttons {
@@ -226,7 +226,7 @@ line-height: 40px;
     }
 
     #origin-section-text {
-        font-size: 1.25rem;
+        font-size: 1.2rem;
       
     }
 }
@@ -244,7 +244,7 @@ line-height: 40px;
     }
 
     #origin-section-title {
-        font-size: 2.25rem;
+        font-size: 2rem;
     }
 
     #origin-section-text {
@@ -395,11 +395,11 @@ display: none;
     }
 
     #hero-section-content p {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     #hero-section-content h2 {
-        font-size: 0.9rem;
+        font-size: 1.2rem;
     }
 
     #hero-buttons {
@@ -409,11 +409,11 @@ display: none;
 
     #hero-buttons .button {
         padding: 8px;
-        font-size: 0.8rem;
+        font-size: 1.2rem;
     }
 
     #origin-section {
-        padding: 20px;
+        padding: 40px;
         gap: 10px;
     }
 
@@ -422,11 +422,11 @@ display: none;
     }
 
     #origin-section-text {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 
     #inspiration-section {
-        padding: 20px;
+        padding: 40px;
         gap: 20px;
     }
 
@@ -436,11 +436,11 @@ display: none;
     }
 
     .inspiration-text {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .inspiration-title {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     #inspiration-images {

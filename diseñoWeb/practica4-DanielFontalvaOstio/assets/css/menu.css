@@ -67,7 +67,7 @@
 #food-expositor-title {
     color: var(--green);
     font-family: Poppins;
-    font-size: 64px;
+    font-size: 4rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -284,13 +284,13 @@
     }
 
     #food-expositor-title {
-        font-size: 32px;
+        font-size: 3rem;
 
     }
 
     #food-expositor-text {
-        font-size: 25px;
-        max-width: 70ch;
+        font-size: 1.2rem;
+
     }
 
     #menu-section {
@@ -315,35 +315,36 @@
 
 @media (max-width: 1330px) {
     #menu-main-page {
-        padding: 200px 150px 150px 150px;
+        padding: 200px 50px 150px 50px;
         gap: 75px;
     }
 
     #menu-main-title {
-        font-size: 4rem;
+        font-size: 3rem;
     }
 
     #specialities {
-        padding: 75px 150px;
+        padding: 75px 50px;
         gap: 7px;
     }
 
     #specialities-text {
-        font-size: 4rem;
+        font-size: 2rem;
     }
 
     #food-expositor {
-        padding: 75px 150px 150px 150px;
+        padding: 75px 50px 150px 50px;
         gap: 75px;
     }
 
     #food-expositor-title {
-        font-size: 48px;
+        font-size: 3rem;
     }
 
     #food-expositor-text {
-        font-size: 40px;
-        width: 100%;
+        font-size: 1.2rem;
+        width: 80%;
+        line-height: 2;
     }
 
     #menu-section {
@@ -366,16 +367,17 @@
     }
 
     #menu-main-title {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     #specialities {
         padding: 25px 50px;
         gap: 2px;
+        
     }
 
     #specialities-text {
-        font-size: 1.5rem;
+        font-size: 2rem;
         width: 100%;
     }
 
@@ -386,8 +388,9 @@
     }
 
     #food-expositor-title {
-        font-size: 24px;
+        font-size: 1.5rem;
         text-align: left;
+
 
     }
 

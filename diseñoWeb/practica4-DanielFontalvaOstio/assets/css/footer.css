@@ -74,5 +74,10 @@ margin-bottom: 40px;
     #footer-awards-images {
         flex-direction: column;
         gap: 20px;
+   
+    }
+    #footer-awards-images img {
+        width: 70px;
+        height: auto;
     }
 }
