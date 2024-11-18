@@ -75,11 +75,11 @@ align-self: stretch;
     gap: 16px;
     width: auto;
     margin-bottom: 50px;
-    transition: transform 0.5s ease; /* Transición para el escalado */
+    transition: transform 0.5s ease;
 }
 
 .member:hover {
-    transform: scale(1.1); /* Escalar el contenedor */
+    transform: scale(1.1);
 
 }
 
@@ -90,13 +90,14 @@ align-self: stretch;
     font-weight: 400;
     text-align: center;
     width: 40ch;
-    opacity: 0; /* Inicia oculto con opacidad */
-    transition: opacity 0.5s ease; /* Transición suave de opacidad */
-    height: auto; /* Asegura que mantenga su espacio */
+    opacity: 0; 
+    transition: opacity 0.5s ease; 
+    height: auto; 
+   
 }
 
 .member:hover .member-text {
-    opacity: 1; /* Aparece suavemente */
+    opacity: 1; 
 }
 
 .member > img {

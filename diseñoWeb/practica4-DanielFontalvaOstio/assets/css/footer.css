@@ -44,9 +44,14 @@ margin-bottom: 40px;
 #footer-awards-images {
     display: flex;
     align-items: center;
-    gap: 104px;
+    gap: 34px;
     align-self: stretch;
     justify-content: center;
+    flex-flow: row wrap;
+}
+#footer-awards-images img {
+    width: 100px;
+    height: 100px;
 }
 
 @media (max-width: 600px) {

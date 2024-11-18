@@ -17,6 +17,7 @@
     font-weight: 700;
     text-align: center;
 }
+
 #menu-main-title span {
     color: var(--green);
 }
@@ -64,7 +65,7 @@
 }
 
 #food-expositor-title {
-    color: var(--verde, #BEEEA4);
+    color: var(--green);
     font-family: Poppins;
     font-size: 64px;
     font-style: normal;
@@ -129,7 +130,7 @@
     color: black;
     align-content: center;
     justify-content: center;
- 
+
 }
 
 .menu-content {
@@ -139,32 +140,32 @@
     gap: 40px;
     align-self: stretch;
 }
+
 .menu-main-title {
     font-family: audiowide;
     font-size: 3rem;
 }
+
 .menu-main-title span {
     color: var(--green);
 }
+
 .menu-title {
     font-size: 1.5rem;
 }
+
 .menu-text {
     font-size: 1rem;
 }
- #menu-svg {
+
+#menu-svg {
     position: absolute;
- }
-
-
- .container {
-    width: 80%;
-    margin: 0 auto;
-    columns: 3 300px;
-
-
 }
-#title4{
+
+
+
+
+#title4 {
     font-size: 5rem;
     font-family: AudioWide, sans-serif;
     font-weight: 400;
@@ -174,16 +175,87 @@
     text-align: center;
     padding: 50px;
 }
-#title4 span{
-   color: #BEEEA4;
+
+#title4 span {
+    color: #BEEEA4;
 }
 
+.container {
+    width: 80%;
+    margin: 0 auto;
+    columns: 3 300px;
+
+}
+
+.image-section {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.image-section img {
+    display: block;
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.image-section .image-title {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    padding: 5px 10px;
+    font-family: Poppins, sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease, bottom 0.5s ease;
+}
 
 .container img {
+    position: relative;
     display: block;
     margin-bottom: 20px;
     width: 100%;
-    border-image: fill 0 linear-gradient( black, rgb(243, 243, 243)) ;
+    border-image: fill 0 linear-gradient(black, rgb(243, 243, 243));
+    opacity: 1;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+
+}
+
+.image-section:hover img {
+    transform: scale(1.1);
+
+}
+
+
+.image-title {
+    z-index: 15;
+    box-shadow: rgba(0, 0, 0, 0.75) 0px -100px 36px inset;}
+
+.image-section:hover .image-title {
+    bottom: 10px;
+    opacity: 1;
+    border-radius: 5px;
+
+}
+
+
+.container img:hover {
+
+    transform: scale(1.1);
+    z-index: 1;
+
+}
+
+.container:hover img {
+    opacity: 0.5;
+}
+
+.container img:hover {
+    opacity: 1;
+    transform: scale(1.1);
 }
 
 @media (max-width: 768px) {
@@ -213,6 +285,7 @@
 
     #food-expositor-title {
         font-size: 32px;
+
     }
 
     #food-expositor-text {
@@ -234,6 +307,7 @@
     .menu {
         width: 100%;
     }
+
     #title4 {
         font-size: 3rem;
     }
@@ -278,7 +352,7 @@
     }
 
     #menus {
-    
+
         gap: 75px;
     }
 

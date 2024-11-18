@@ -166,6 +166,9 @@ box-sizing: border-box;
 overflow: hidden;
 
 }
+#signature img{
+    max-width: 380px;
+}
 
 #title2{
     font-size: 5rem;
