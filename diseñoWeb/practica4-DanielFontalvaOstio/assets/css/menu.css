@@ -221,7 +221,6 @@
     border-image: fill 0 linear-gradient(black, rgb(243, 243, 243));
     opacity: 1;
     transition: opacity 0.5s ease, transform 0.5s ease;
-
 }
 
 .image-section:hover img {
