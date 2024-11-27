@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+header {
+    height: 80px;
+    position: sticky;
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+
+    ul {
+        list-style-type: none;
+        width: 70%;
+        height: 100%;
+        border: 1px solid red;
+        margin-inline: auto;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    ul li img {
+
+        width: 100%;
+        height: 100%;
+
+        object-fit: contain;
+        border: 1px solid rgb(39, 160, 90);
+    }
+
+    ul li {
+        flex: 1;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    ul li a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: rgb(255, 255, 255);
+    }
+}
+
+.floating-button {
+    position: absolute;
+    background-color: black;
+    color: white;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+right: 4rem;
+bottom: 4rem;
+box-shadow: 1px 1px 4px black;
+    a{ 
+        color: white;
+        text-decoration: none;
+        padding: 1rem;
+        font-size: .8rem;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+
+.hero {
+    width: 100%;
+    height: calc(100vh - 80px);
+    margin-top: -80px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .main-tag {
+        color: white;
+        font-size: 4rem;
+    }
+
+    p {
+        color: white;
+        width: 50%;
+        margin-inline: auto;
+        font-size: 1.2rem;
+    }
+
+    &::before {
+        background-image: url(mesmerizing-view-sassolungo-mountain-italy.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute;
+        inset: 0;
+        content: '';
+        z-index: -1;
+
+        /* mask-image: url(ink.gif); */
+        mask-position: center;
+        mask-size: cover;
+        mask-repeat: no-repeat;
+    }
+
+}
+
+
+button {
+    padding: .7rem 3rem;
+    text-transform: uppercase;
+    font-family: Montserrat, sans-serif;
+    margin-top: 2rem;
+}
+
+.main-btn {
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, .5);
+}
+
+.second-btn {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+}
