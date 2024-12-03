@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <a href="#">Nepal <span>Tourism</span></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Routes</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <img src="img/photo-1727949395615-6a8759aeb561.jfif" alt="" id="back" style="transform: scaleX(-1);">
+        <h1 id="main-tag"><span>Discover</span> <span>Himalayas</span></h1>
+        <img src="img/recorte.png" alt="" id="front">
+    </main>
+    <section>
+        ?
+    </section>
+    <section>
+        ?
+    </section>
+    <script>
+        let text = document.getElementById('main-tag');
+        let imagen = document.getElementById('front');
+        window.addEventListener('scroll', function() {
+            let value = window.scrollY;
+            console.log(value);
+            text.style.marginTop = value * 2 + 'px';
+            imagen.style.marginTop = value * .5 + 'px';
+        });
+    </script>
+</body>
+
+</html>
