@@ -1,0 +1,11 @@
+Vagrant.configure("2") do |config|
+  config.vm.define "dani-ionos" do |nginx|
+    nginx.vm.box = "debian/bookworm64"
+    nginx.vm.hostname = "dani-practica"
+   config.vm.network "private_network", ip: "192.168.3.15"
+    config.vm.network "forwarded_port", guest: 80, host: 8080, auto_correct: true
+    config.vm.network "forwarded_port", guest: 443, host: 8443, auto_correct: true
+    #provisión
+    nginx.vm.provision "shell", path: "provision.sh"
+  end
+end

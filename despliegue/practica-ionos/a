@@ -1,0 +1,39 @@
+<VirtualHost *:80>
+    # Dirección del servidor
+    ServerAdmin webmaster@localhost
+    ServerName danielfontalva.es
+    ServerAlias www.danielfontalva.es
+
+    # DocumentRoot (directorio donde están los archivos del sitio web)
+    DocumentRoot /var/www/html
+
+    # Directorios y permisos
+    <Directory /var/www/html>
+        Options Indexes FollowSymLinks
+        AllowOverride None
+        Require all granted
+    </Directory>
+
+    # Logs del sitio
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+
+<VirtualHost *:443>
+    ServerAdmin webmaster@localhost
+    ServerName danielfontalva.es
+    ServerAlias www.danielfontalva.es
+
+    DocumentRoot /var/www/html
+
+    <Directory /var/www/html>
+        Options Indexes FollowSymLinks
+        AllowOverride None
+        Require all granted
+    </Directory>
+
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+    SSLEngine on
+    SSLCertificateFile /etc/ssl/certs/danielfontalva.crt

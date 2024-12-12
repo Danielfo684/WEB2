@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
 
+.root {
+    --font-title: 24px;
+    --font-s: 16px;
+--font-p: 12px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -16,6 +23,9 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+#header-logo {
+    width: 150px;
 }
 
 a {
@@ -56,6 +66,12 @@ main {
         color: white;
         font-weight: 800;
         z-index: 2;
+        top: 200px;
+        left: 200px;
+    }
+    #main-tag h1 {
+        font-size: 8rem;
+
     }
 
     #main-tag span:nth-child(1) {
@@ -98,18 +114,20 @@ main {
 }
 
 header {
+    
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1rem 2rem;
+    height: 100px;
+    padding: 4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 999;
 
 
-    >a {
+    > a {
         font-size: 2rem;
         font-weight: 800;
         color: white;
@@ -129,13 +147,15 @@ header {
         text-transform: uppercase;
         font-weight: 600;
         padding: .2rem 1rem;
+        transition: 0.3s ease;
+        border-radius: 20px;
+
     }
 
     ul li a:hover,
     ul li a.active {
         color: #282a2e;
         background-color: white;
-        border-radius: 20px;
     }
 
     >a span {

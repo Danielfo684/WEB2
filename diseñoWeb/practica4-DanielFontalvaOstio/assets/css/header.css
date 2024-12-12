@@ -213,7 +213,6 @@ top: 50px;
         left: 0;
    
         animation: fade-in-mobile .3s ease-in;
-
     }
 
     @keyframes fade-in-mobile {
@@ -245,4 +244,5 @@ top: 50px;
 .menu-on-nav li a:hover {
     color: black;
 
+}
 }
