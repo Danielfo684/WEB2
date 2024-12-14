@@ -95,17 +95,24 @@ ul {
     border-radius: 50%;
     color: #ffffff;
     transition: all 0.3s ease;
-    ;
+    position: relative;
+    
+img {
+    width: 24px;
+    position: absolute;
+top: 8px;
+left: 8px;
+}
 }
 
 .footer-content .social-links a:hover {
-    color: #24262b;
-    background-color: #ffffff;
+    background-color: #24262b;
 }
 
 #footer-logo {
     width: 200px;
 }
+
 
 /*responsive*/
 @media (max-width: 1038px) {

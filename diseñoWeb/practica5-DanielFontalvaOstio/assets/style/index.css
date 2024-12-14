@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
 
-.root {
+:root {
     --font-title: 24px;
     --font-s: 16px;
---font-p: 12px;
+    --font-p: 12px;
+    --main-color: #ff8f44;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
 
 * {
@@ -24,6 +26,7 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+
 #header-logo {
     width: 150px;
 }
@@ -66,55 +69,88 @@ main {
         color: white;
         font-weight: 800;
         z-index: 2;
-        top: 200px;
+        top: 300px;
         left: 200px;
     }
+
     #main-tag h1 {
         font-size: 8rem;
+    }
 
+    #main-tag h2 {
+        font-size: 3rem;
     }
 
     #main-tag span:nth-child(1) {
         text-shadow: 1px 1px 3px #000000;
-    
 
     }
 
     #main-tag span:nth-child(2) {
         color: transparent;
-
         -webkit-text-stroke: 1px white;
 
     }
+
+
+
 }
 
 #front {
     position: absolute;
     z-index: 5;
     height: 200px;
-   bottom: 250px;
-    animation: moverigth 300s linear infinite;
+    bottom: 250px;
+    animation: moveright 300s ease-in-out infinite;
 }
-@keyframes moverigth {
-    0%, 100% {
+#front2 {
+    position: absolute;
+    z-index: 0;
+    height: 100px;
+    bottom: 600px;
+    left: 300px;
+    animation: moveright2 200s ease-in-out infinite;
+}
+
+@keyframes moveright2 {
+
+    0%,
+    100% {
         transform: translateX(0);
-        
+
     }
+
+    50% {
+        transform: translateX(-500px);
+    }
+}
+@keyframes moveright {
+
+    0%,
+    100% {
+        transform: translateX(0);
+
+    }
+
     50% {
         transform: translateX(500px);
     }
 }
+
 @keyframes moveUpDown {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(-20px);
     }
 }
 
 header {
-    
+
     position: absolute;
     top: 0;
     left: 0;
@@ -127,7 +163,7 @@ header {
     z-index: 999;
 
 
-    > a {
+    >a {
         font-size: 2rem;
         font-weight: 800;
         color: white;
@@ -142,6 +178,16 @@ header {
         list-style-type: none;
     }
 
+    ul li:nth-of-type(2) a {
+        border: 1px solid var(--main-color);
+        color: var(--main-color);
+    }
+
+    ul li:nth-of-type(2) a:hover {
+        background-color: var(--main-color);
+        color: white;
+    }
+
     ul li a {
         color: white;
         text-transform: uppercase;
@@ -149,6 +195,7 @@ header {
         padding: .2rem 1rem;
         transition: 0.3s ease;
         border-radius: 20px;
+        padding: 3px 20px;
 
     }
 
@@ -163,4 +210,3 @@ header {
         -webkit-text-stroke: 1px rgba(255, 255, 255, 0.829);
     }
 }
-
