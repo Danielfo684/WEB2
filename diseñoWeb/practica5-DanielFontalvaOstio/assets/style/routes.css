@@ -1,0 +1,138 @@
+
+.routes-main {
+    background-image: url(../images/experience.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    margin-top: -100px;
+    width: auto;
+    align-items: center;
+
+    .routes-main-content {
+        width: fit-content;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        
+        gap: 20px;
+
+        .routes-title {
+            font-size: var(--font-xl);
+            color: white;
+            padding: 200px 8vw;
+
+        }
+
+        .routes-title span {
+            color: var(--main-color);
+        }
+
+
+    }
+}
+
+
+
+
+
+
+
+
+.routes-capadocia {
+    height: 70vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    #back {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        z-index: 0;
+    }
+
+    #main-tag {
+        position: absolute;
+        font-size: var(--font-xl);
+        font-family: poppins;
+        color: white;
+        font-weight: 800;
+        z-index: 2;
+        top: -500px;
+        left: 200px;
+    }
+
+    #main-tag h1 {
+        font-size: 8rem;
+    }
+
+    #main-tag h2 {
+        font-size: 3rem;
+    }
+
+    #main-tag span:nth-child(1) {
+        text-shadow: 1px 1px 3px #000000;
+
+    }
+
+    #main-tag span:nth-child(2) {
+        color: transparent;
+        -webkit-text-stroke: 1px white;
+
+    }
+
+
+
+}
+
+#front {
+    position: absolute;
+    z-index: 5;
+    height: 200px;
+    bottom: 250px;
+    animation: moveright 200s ease-out infinite;
+}
+@keyframes moveright2 {
+
+    0%,
+    100% {
+        transform: translateX(0);
+
+    }
+
+    50% {
+        transform: translateX(-500px);
+    }
+}
+@keyframes moveright {
+
+    0%,
+    100% {
+        transform: translateX(0);
+
+    }
+
+    50% {
+        transform: translateX(500px);
+    }
+}
+
+@keyframes moveUpDown {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
