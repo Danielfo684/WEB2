@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
 @font-face {
     font-family: 'MegaFresh';
     src: url(/assets/fonts/mega-fresh.ttf);
     font-weight: normal;
     font-style: normal;
+}
+
+a {
+    text-decoration: none;
 }
 
 html {
@@ -12,52 +17,56 @@ html {
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     line-height: 1.8;
     margin: 0;
     font-family: poppins, sans-serif;
     padding: 0;
     box-sizing: border-box;
-  
+
 }
+
 :root {
     --font-xl: clamp(3rem, 5vw, 8rem);
-    --font-title: clamp(1.5rem, 2vw, 2rem);
-    --font-section: clamp(1.8rem, 2vw, 2.3rem);
+    --font-title: clamp(1.5rem, 2vw, 4rem);
+    --font-subtitle: clamp(1.8rem, 2vw, 2.3rem);
     --font-m: clamp(1rem, 1.5vw, 1.2rem);
     --font-s: clamp(0.8rem, 1.5vw, 1rem);
     --main-color: #b62222;
     --second-color: #e23e3e;
     --contrast-color: #004c54;
     --contrast-second-color: #148693;
+    --grey: #222;
 }
 
 
-  /* boton de scroll */
-  .scroll-up {
-    position: fixed; 
+/* boton de scroll */
+.scroll-up {
+    position: fixed;
     right: 3rem;
     bottom: 5%;
     z-index: 10;
     width: 32px;
     height: 32px;
     border-radius: 4px;
-    background-color: rgba(29, 29, 31, 0.7);
+    background-color: var(--grey);
     transition: transform .4s;
-  }
-  .scroll-up svg {
-    margin: 4px;
-  }
-  
-  .scroll-up:hover {
-    transform: translateY(-.25rem);
-  }
+}
 
-  @media (max-width: 1200) {
+.scroll-up svg {
+    margin: 4px;
+}
+
+.scroll-up:hover {
+    transform: translateY(-.25rem);
+}
+
+@media (max-width: 1200) {
     .scroll-up {
-      right: 1rem;
+        right: 1rem;
     }
-  }
+}
 
 
 
@@ -67,7 +76,7 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     height: 95vh;
-    margin-top: -100px;
+    margin-top: -120px;
     width: auto;
     align-items: center;
 
@@ -87,6 +96,11 @@ main {
 
         .title span {
             color: var(--second-color);
+        }
+
+        .subtitle {
+            font-size: var(--font-subtitle);
+            color: white;
         }
 
 
@@ -135,10 +149,7 @@ main {
 
 
 
-.button:disabled {
-    background-color: grey;
-    cursor: not-allowed;
-}
+
 
 
 /* Sección Experience */
@@ -147,20 +158,20 @@ main {
 .experience-section {
     display: flex;
     flex-flow: row wrap;
-    margin:  4vh 8vw;
+    margin: 4vh 8vw;
     justify-content: space-around;
 }
 
 .experience-card {
     border-radius: 10px;
-width: 320px;
-height: 500px;
-margin:  15px auto;
-transition: background-image 0.3s ease;
+    width: 320px;
+    height: 500px;
+    margin: 15px auto;
+    transition: background-image 0.3s ease;
 
 }
 
-.experience-card:nth-of-type(1) {
+#experience-sea {
     background-image: url(../images/amasra-bartin.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -168,36 +179,36 @@ transition: background-image 0.3s ease;
     align-content: end;
 }
 
-.experience-card:nth-of-type(1):hover {
-background-image: url(../images/beach.jpg);
+#experience-sea:hover {
+    background-image: url(../images/beach.jpg);
 }
 
-.experience-card:nth-of-type(2) {
+#experience-history {
     background-image: url(../images/temple.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.experience-card:nth-of-type(2):hover {
-   
+#experience-history:hover {
+
     background-image: url(../images/10-icerik-gorseli-ii.jpg);
 
 }
 
-.experience-card:nth-of-type(3) {
+#experience-heritage {
     background-image: url(../images/heritage.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.experience-card:nth-of-type(3):hover {
+#experience-heritage:hover {
     background-image: url(../images/escultura.webp);
 
 }
 
-.experience-card:nth-of-type(4) {
+#experience-food {
     background-image: url(../images/bafra-pide.jpg);
 
     background-position: center;
@@ -206,7 +217,7 @@ background-image: url(../images/beach.jpg);
     align-content: end;
 }
 
-.experience-card:nth-of-type(4):hover {
+#experience-food:hover {
     background-image: url(../images/cheese-pide.jpg);
 
 }
@@ -219,7 +230,11 @@ background-image: url(../images/beach.jpg);
     margin: 15px;
     padding: 20px;
     border-radius: 5px;
-    h3, h2 {
+
+    h3,
+    h2 {
+        text-decoration: none;
+
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         color: white;
     }
@@ -227,10 +242,11 @@ background-image: url(../images/beach.jpg);
     h2 {
         font-size: var(--font-title);
     }
+
     h3 {
         font-size: var(--font-m);
     }
-   
+
 }
 
 
@@ -253,6 +269,7 @@ background-image: url(../images/beach.jpg);
         span:nth-of-type(1) {
             color: var(--main-color);
         }
+
         span:nth-of-type(2) {
             color: var(--contrast-color);
         }
@@ -372,7 +389,8 @@ background-image: url(../images/beach.jpg);
     font-size: var(--font-title);
     margin-bottom: 10px;
 
-    span {    color: var(--main-color);
+    span {
+        color: var(--main-color);
     }
 }
 
@@ -405,47 +423,107 @@ background-image: url(../images/beach.jpg);
 
 
 .history-section {
-
+margin: 8vh 0;
     h1 {
         margin: 8vh 8vw;
 
         font-size: var(--font-title);
+
         span {
             color: var(--main-color);
         }
     }
 
-    .article {
-        display: flex;
-        flex-flow: row wrap;
-        gap: 10%;
-        img {
-            height: auto;
-            width: 48%;
-        }
-        .article-content {
-            flex: 1;
-            padding: 0 10vw 0 4vw;
-margin: auto;
-            h2 {
-                padding-bottom: 20px;
-                font-size: var(--font-m);
-            }
-            p {
-                font-size: var(--font-s);
-            }
-        }
+    
+
+
+}
+
+.article {
+    display: flex;
+    flex-direction: row wrap;
+margin: 8vh 8vw;
+    img {
+        height: auto;
+        width: 48%;
     }
 
-    .article:nth-of-type(2), .article:nth-of-type(4) {
-        flex-direction: row-reverse;
-        .article-content {
-            padding: 0 0 0 12vw;
+    .article-content {
+        flex: 1;
+        padding: 30px 4vw 30px 4vw;
+        margin: auto;
+
+        h2 {
+            padding-bottom: 20px;
+            font-size: var(--font-m);
+        }
+
+        p {
+            font-size: var(--font-s);
         }
     }
 }
+@media (max-width: 768px) {
+
+    main {
+        height: fit-content;
+    }
 
 
+
+
+    .subtitle {
+        font-size: var(--font-m);
+    }
+
+    .double-cta {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .cta-button {
+        width: 100%;
+    }
+
+    .experience-section {
+        flex-direction: column;
+        margin: 2vh 4vw;
+    }
+
+    .experience-card {
+        width: 100%;
+        height: 300px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .card img {
+        height: auto;
+    }
+
+    .double-image-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .image-container img {
+        width: 100%;
+    }
+
+    .text-container {
+        padding: 10px;
+    }
+
+    .history-section h1 {
+        margin: 4vh 4vw;
+    }
+
+
+
+}
 
 
 @media (max-width: 1280px) {
@@ -455,24 +533,53 @@ margin: auto;
     }
 
     .image-container {
-        flex: 0.5;
 
         img {
             height: auto;
+            order: 1;
         }
 
 
     }
 
-    .image-container::of-type(1) {
-        float: left;
+    .text-container {
+        order: -1;
+        min-width: 325px;
     }
 
-    .image-container::of-type(2) {
-        order: 2;
+    .article {
+      flex-direction: column;
+margin: 4vh 8vw;
+        img { order: 1;
+            height: auto;
+            width: 70%;
+            margin: auto;
+        }
+
+        .article-content {}
     }
 
-    .empty-space {
-        display: none;
+}
+
+@media (max-width: 1140px) {
+    .double-image-container {
+        flex-flow: row wrap;
+        align-items: center;
+    }
+
+    .image-container {
+        min-width: 300px;
+        max-width: 400px;
+        margin: auto;
+
+        img {
+            height: auto;
+            width: 100%;
+        }
+
+        .empty-space {
+            display: none;
+        }
+
     }
 }

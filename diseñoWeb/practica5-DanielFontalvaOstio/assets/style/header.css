@@ -9,24 +9,26 @@ nav {
     justify-content: space-between;
     align-items: center;
     z-index: 20;
-    /* backdrop-filter: blur(4px); */
     background-color: rgb(29, 29, 29, 0);
-     animation: stickyNav  linear forwards;
+    animation: stickyNav linear forwards;
 
     animation-timeline: view();
-    animation-range-start: 140vh; 
+    animation-range-start: 140vh;
     animation-range-end: 160vh;
 }
 
 @keyframes stickyNav {
     100% {
-background-color: rgba(0, 0, 0, 0.276);
+        background-color: rgba(0, 0, 0, 0.276);
+        backdrop-filter: blur(2px);
+
     }
 }
 
 #header-logo {
     width: 130px;
 }
+
 .menu-on-nav {
     display: flex;
     justify-content: center;
@@ -43,10 +45,8 @@ background-color: rgba(0, 0, 0, 0.276);
     text-decoration: none;
     font-size: var(--font-m);
     color: white;
-    text-transform: uppercase;
     font-weight: 600;
     transition: color 0.3s ease;
-    border-radius: 20px;
     padding: 3px;
     position: relative;
 }
@@ -72,6 +72,20 @@ background-color: rgba(0, 0, 0, 0.276);
 
 } */
 
+.menu-on-nav li:last-of-type a {
+    background-color: var(--main-color);
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+.menu-on-nav li:last-of-type a:hover {
+  background-color: var(--second-color);
+}
+
+.menu-on-nav li:last-of-type a:hover::after,
+.menu-on-nav li:last-of-type a.active::after {
+    width: 0%;
+}
 
 .nav-bar {
     position: relative;
@@ -81,6 +95,7 @@ background-color: rgba(0, 0, 0, 0.276);
     height: 30px;
     display: none;
     margin-left: auto;
+    z-index: 3;
 }
 
 .nav-bar input {
@@ -99,6 +114,7 @@ background-color: rgba(0, 0, 0, 0.276);
     transform: rotate(0deg);
     transition: .25s ease-in-out;
 }
+
 .nav-bar:hover span {
     background-color: var(--main-color);
 }
@@ -159,8 +175,7 @@ background-color: rgba(0, 0, 0, 0.276);
         height: 100vh;
         background-color: rgba(0, 0, 0, 0.9);
         position: fixed;
-
-        top: 8vh;
+top: 70px;
         left: 0;
         animation: fade-in-mobile .3s ease-in;
     }
@@ -183,6 +198,7 @@ background-color: rgba(0, 0, 0, 0.276);
         align-items: center;
         height: 40vh;
         padding: 1rem 0;
+        margin-top: 10vh;
     }
 
     .menu-mobile .menu-on-nav li a {

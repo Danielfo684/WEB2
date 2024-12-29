@@ -112,7 +112,6 @@ left: 8px;
 }
 
 
-/*responsive*/
 @media (max-width: 1038px) {
     .footer-content {
         width: 50%;
@@ -130,12 +129,5 @@ left: 8px;
     .footer- {
         width: 50%;
         margin-bottom: 30px;
-    }
-}
-
-@media(max-width: 574px) {
-    .footer-content {
-        margin: auto;
-        width: 100%;
     }
 }
