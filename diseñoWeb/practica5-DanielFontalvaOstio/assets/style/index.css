@@ -1,15 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
 
-@font-face {
-    font-family: 'MegaFresh';
-    src: url(/assets/fonts/mega-fresh.ttf);
-    font-weight: normal;
-    font-style: normal;
-}
+
 
 a {
     text-decoration: none;
 }
+
 
 html {
     scroll-behavior: smooth;
@@ -119,7 +115,7 @@ main {
 }
 
 .cta-button:nth-of-type(2) {
-    background-color: rgba(0, 0, 0, 0.062);
+    background-color: rgba(0, 0, 0, 0.262);
     border: 1px solid var(--main-color);
 }
 

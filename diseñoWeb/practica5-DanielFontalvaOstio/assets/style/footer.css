@@ -14,13 +14,14 @@ body {
     margin: auto;
 }
 
-.row {
+.footer-flex {
     display: flex;
     flex-wrap: wrap;
 }
 
 ul {
     list-style: none;
+    
 }
 
 .footer {
