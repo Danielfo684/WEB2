@@ -602,7 +602,7 @@ main {
 .projects-section {
     display: flex;
     flex-direction: column;
-    gap: 65px;
+    gap: 35px;
     margin-top: 120px;
 
     .title-section {
@@ -618,8 +618,8 @@ main {
     .project-container {
         display: flex;
         align-items: flex-start;
-        gap: 157px;
-        padding: 0px 100px 120px 0;
+        gap: 50px;
+        padding: 0px 8vw 0px 0;
 
         >img {
             width: 65%;
@@ -669,19 +669,31 @@ main {
     background-color: var(--main-color);
     border-radius: 4px;
 }
+.line2{
+    width: 40px;
+    height: 4px;
+    background-color: var(--second-color);
+    border-radius: 4px;
+}
 
 .title-section {
     display: flex;
     align-items: center;
     gap: 20px;
 }
+.title-section2 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
 
 
-.project-exposition{
+.project-exposition {
     height: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
+    margin-bottom: 120px;
 
     .project-exposition-title {
         padding-left: 8vw;
@@ -690,7 +702,7 @@ main {
 
 }
 
-.project-exposition-container{
+.project-exposition-container {
     height: 100%;
     width: 100%;
 
@@ -702,9 +714,9 @@ main {
 
 }
 
-.project-exposition-header{
+.project-exposition-header {
     width: 100%;
-    flex:2;
+    flex: 2;
 
     display: flex;
     justify-content: space-around;
@@ -712,90 +724,118 @@ main {
 }
 
 .project-exposition-body {
-    width: 60%;
+    width: 80%;
     flex: 5;
 
     display: flex;
     flex-flow: row wrap;
-    
+
 }
 
-.ser{
+.project-microsection {
     box-sizing: border-box;
-
-    flex:1 0 50%;
+    flex: 1 0 50%;
     position: relative;
-
     padding: 2rem;
+
+    img {
+        width: 100%;
+        height: auto;
+        /* padding: 0 50px; */
+        box-sizing: border-box;
+        /* background-color: var(--grey); */
+        object-fit: contain;
+        /* clip-path: polygon(5.5% 0, 100% 0, 95% 100%, 0% 100%); */
+
+    }
+
 }
 
-.ser p:first-child{
+.project-microsection p:first-child {
     text-transform: uppercase;
-    font-size: 1.2em;
+    font-size: var(--font-m);
 }
 
-.ser p:last-child{
-    line-height: 1.5em;
+.project-microsection p:last-child {
+    line-height: 1.5rem;
+    width: 80%;
+
 }
 
-.ser1, .ser2{
+.pm1,
+.pm4 {
     display: flex;
     flex-flow: column nowrap;
-    justify-content: flex-end;
+    justify-content: center;
 
 }
 
-.ser1 p, .ser3 p{
+.pm1 p {
     text-align: right;
+    align-self: flex-end;
 
 }
 
-.ser1::before{
-    content:"";
-    border: 1px solid #414141;
+.pm1>* {
+    margin-bottom: 0px;
+}
+
+.pm4 p {
+    text-align: left;
+    align-self: flex-start;
+}
+
+
+.pm1::before {
+    content: "";
+    border: 1px solid var(--grey);
     position: absolute;
 
-    width:80%;
+    width: 70%;
 
-    bottom:0;
-    right:2rem;
+    bottom: 0;
+    right: 6rem;
 
 }
 
-.ser2::before{
-    content:"";
-    border: 1px solid #414141;
+.pm2::before {
+    content: "";
+    border: 1px solid var(--grey);
     position: absolute;
 
-    height:80%;
+    height: 50%;
 
-    left:0;
-    bottom:2rem;
+    left: 0;
+    bottom: 6rem;
 
 }
 
-.ser3::before{
-    content:"";
-    border: 1px solid #414141;
+.pm3::before {
+    content: "";
+    border: 1px solid var(--grey);
     position: absolute;
 
-    height:80%;
+    height: 50%;
 
-    right:0;
-    top:2rem;
+    right: 0;
+    top: 6rem;
 
-   
+
 }
 
-.ser4::before{
-    content:"";
-    border: 1px solid #414141;
+.pm4::before {
+    content: "";
+    border: 1px solid var(--grey);
     position: absolute;
 
-    width:80%;
+    width: 70%;
 
-    top:0;
-    left:2rem;
+    top: 0;
+    left: 6rem;
 
-   
+
+}
+
+.subtitle2 span {
+    color: var(--second-color);
 }
