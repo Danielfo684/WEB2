@@ -1,6 +1,6 @@
 nav {
     position: sticky;
-top: -6px;
+top: -10px;
     width: 100%;
     height: fit-content;
     padding: 1rem clamp(3rem, 5vw, 5rem);
@@ -102,7 +102,7 @@ top: -6px;
     a {
 
         text-decoration: none;
-        font-size: var(--font-s);
+        font-size: var(--font-m);
         color: white;
         font-weight: 600;
         transition: color 0.3s ease;
@@ -145,7 +145,7 @@ top: -6px;
     content: '';
     position: absolute;
     bottom: 10px;
-    left: -15px;
+    left: 55px;
     height: 8px;
     width: 8px;
     background-color: rgb(21, 203, 21);
@@ -155,7 +155,7 @@ top: -6px;
 
 
 .menu-on-nav li:nth-of-type(4) a {
-    background-color: var(--main-color);
+    background-color: var(--third-color);
 
     border-radius: 5px;
     padding: 10px 20px;
@@ -171,6 +171,10 @@ top: -6px;
 .menu-on-nav li:nth-of-type(4) a:hover::after,
 .menu-on-nav li:nth-of-type(4) a.active::after {
     width: 0%;
+}
+
+#open-work {
+    padding-left: 80px;
 }
 
 .nav-bar {
