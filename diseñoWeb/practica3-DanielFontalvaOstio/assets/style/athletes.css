@@ -1,25 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mynerve&display=swap');
 
-@font-face {
-    font-family: 'Kamerik-Bold';
-    src: url(/assets/fonts/Kamerik\ 205\ Bold.ttf),
-}
-
-@font-face {
-    font-family: 'Kamerik-Heavy';
-    src: url(/assets/fonts/Kamerik\ 205\ Heavy.ttf),
-}
-
-@font-face {
-    font-family: 'Kamerik-Light';
-    src: url(/assets/fonts/Kamerik\ 205\ Light.ttf),
-}
 
 :root {
     --colorGrey: #464646;
     --colorBlue: #265FA3;
     --colorWhite: #FFFEFC;
+    --font-s: clamp(0.8rem, 2.5vw, 1rem);
+    --font-m: clamp(1.2rem, 2.5vw, 1.5rem);
+    --font-l: clamp(2rem, 2.5vw, 3rem);
+    --font-hero: clamp(8rem, 2.5vw, 9rem);
+    --font-hero-sub: clamp(6rem, 2.5vw, 8rem);
 }
+
 
 
 html {
@@ -43,26 +34,34 @@ body {
 #mainSection {
     background-image: url(../images/desert-climb.jpg);
 
-    background-position: center;
+    background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+    height: 700px;
+}
+
+#athletesTitle h1 {
+    font-weight: 100;
+
 }
 
 #mainSection .indexTitle {
     display: flex;
     flex-direction: column;
     display: inline-block;
-    padding: 19px 120px 185px 910px;
+    position: absolute;
+    top: 100px;
 }
 
 #firstSection {
-    background-image: url(../images/climbing-png.png);
+    background-image: url(../images/climbing2-transparent.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-size: contain;
+    background-position: left;
     display: flex;
     flex-flow: column nowrap;
-    gap: 30px;
+
     justify-content: center;
     width: 100%;
 }
@@ -72,6 +71,8 @@ body {
     font-family: kamerik-bold;
     font-size: clamp(2rem, 0.667rem + 4.444vw, 5rem);
     text-align: center;
+    font-weight: 100;
+
 }
 
 #firstSection h1 span {
@@ -80,19 +81,135 @@ body {
 
 
 
+/* --------------------------- ATHLETES ---------------- */
+
+.climber1, .climber3 {
+    margin: 8rem 0;
+    padding: 0 10%;
+    gap: 3rem;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.climber2 {
+    padding: 0 10%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
 
 
 
+.athlete-picture {
+    height: 700px;
+    flex: 1;
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.info {
+    height: auto;
+width: 40%;
+    display: flex;
+    flex-flow: column;
+    text-align: justify;
+
+    h2 {
+        font-size: var(--font-l);
+
+    }
+    p {font-size: var(--font-s);}
+}
+
+.socials-climber {
+    width: auto;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.instagram {
+
+    background-image: url(../images/instagram-grey.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+}
+
+.twitter {
+
+    background-image: url(../images/x-grey.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+}
 
 
 
+.ondra-image {
+    background-image: url(../images/ondra.jpg);
+}
+.garnbret-image {
+    background-image: url(../images/janja.jpg);
+}
+.gines-image {
+    background-image: url(../images/alberto.png);
+}
 
+
+.gallery-container p {
+    font-family: kamerik-bold;
+    font-size: var(--font-l);
+    text-align: center;
+    margin-top: 10rem;
+}
+
+.gallery {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem;
+    
+    columns: 3 300px;
+    
+    margin-bottom: 4rem;
+    img {
+        display: block;
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+}
+
+   
+
+#lastSection3 {
+    margin: 0;
+    padding: 0;
+    height: 650px;
+    background-image: url(../images/mountain3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
 
 
 footer {
     background-color: #2D2D2D;
     color: var(--colorWhite);
-    padding: 20px;
+    padding-top: 50px;
 }
 
 .footerBox a {
@@ -107,11 +224,9 @@ footer {
 
 .socialLinks {
     display: flex;
-    flex-flow: column nowrap;
-    margin-right: 50px;
-    width: 5%;
-    align-items: center;
-    float: right;
+    flex-flow: row wrap;
+    width: 150px;
+    margin: 0;
 }
 
 .socialIcon {
@@ -148,4 +263,35 @@ footer {
 
 #linedStructureFooter h1 {
     color: var(--colorWhite);
+}
+
+@media (max-width: 1485px) {
+    #mainSection {
+
+        height: 600px;
+    }
+}
+
+@media (max-width: 1000px) {
+    #mainSection {
+
+        height: 400px;
+    }
+    #firstSection h1 {
+padding-left: 50px;    }
+
+}
+@media (max-width: 1160px) {
+    .climber1, .climber2, .climber3 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .athlete-picture {
+        min-height: 400px;
+        width: 100%;
+    }
+    .info {
+        width: 100%;
+        max-width: 60ch;
+    }
 }

@@ -1,28 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mynerve&display=swap');
 
-@font-face {
-    font-family: 'Kamerik-Bold';
-    src: url(/assets/fonts/Kamerik\ 205\ Bold.ttf),
+
+:root {
+    --colorGrey: #464646;
+    --colorBlue: #265FA3;
+    --colorWhite: #FFFEFC;
+    --font-s: clamp(0.8rem, 2.5vw, 1rem);
+    --font-m: clamp(1.2rem, 2.5vw, 1.5rem);
+    --font-l: clamp(2rem, 2.5vw, 3rem);
+    --font-hero: clamp(8rem, 2.5vw, 9rem);
+    --font-hero-sub: clamp(6rem, 2.5vw, 8rem);
 }
 
-@font-face {
-    font-family: 'Kamerik-Heavy';
-    src: url(/assets/fonts/Kamerik\ 205\ Heavy.ttf),
-}
-
-@font-face {
-    font-family: 'Kamerik-Light';
-    src: url(/assets/fonts/Kamerik\ 205\ Light.ttf),
-}
 footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
 }
+
 footer p {
     font-family: Montserrat;
-    font-size: 20px;
+    font-size: var(--font-s);
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -30,54 +28,70 @@ footer p {
 
 #footerStructure {
     display: flex;
-    justify-content: space-around;
-    padding: 50px 100px;
+    justify-content: space-evenly;
+    padding: 0 100px 50px 100px;
+    flex-flow: row nowrap;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .footerBox {
     display: flex;
     flex-direction: column;
     justify-content: top;
+    gap: 20px;
+    width: 180px;
 
+    >img {
+        width: 400px;
+    }
 }
+
 .footerBox a {
     text-decoration: none;
-margin-top: 15px;
+}
+.footerBox a:hover {
+    color: rgb(138, 138, 138);
 }
 
 #partners {
-    align-items: center;
+    align-items: flex-start;
 }
+
 .footerOptionImage {
-    gap: 10px
+    min-width: 180px;
 }
+
 #footerSocialLinks a {
 
     margin-top: 0;
 }
+
 .footerTitle {
     font-family: Montserrat;
-    font-size: 24px;
+    font-size: var(--font-m);
     font-weight: 500;
 
 }
 
 .footerOptionCouple {
     display: flex;
-flex-flow: row nowrap;
+    flex-flow: row nowrap;
 }
-#footer-Contact {
-    gap: 30px;
-    align-items: center;
+
+#footer-contact {
+    align-items: flex-start;
     align-content: center;
-    justify-content: center;
+    justify-content: top;
+    text-align: left;
 }
 
 
 .footerOptionCouple img {
     width: 24px;
     height: 24px;
-    margin: 20px 5px 0 0;
+    margin: auto;
+    margin-right: 10px;
 }
 
 
@@ -87,7 +101,7 @@ flex-flow: row nowrap;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-top: 20px ;
+    padding-top: 20px;
 }
 
 
@@ -109,11 +123,19 @@ flex-flow: row nowrap;
 
 #footerBoxSocial {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-flow: column;
+    align-items: flex-start;
     justify-content: top;
     align-content: center;
 }
+
 #footerSocialLinks a {
-margin:auto;
+    margin: auto;
+}
+
+@media (max-width: 1100px) {
+    #footerStructure {
+        flex-flow: row warp !important;
+padding: 0 20px;
+    }
 }

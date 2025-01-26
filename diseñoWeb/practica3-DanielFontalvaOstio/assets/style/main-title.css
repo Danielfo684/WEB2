@@ -1,45 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mynerve&display=swap');
 
-@font-face {
-    font-family: 'Kamerik-Bold';
-    src: url(/assets/fonts/Kamerik\ 205\ Bold.ttf),
-}
-
-@font-face {
-    font-family: 'Kamerik-Heavy';
-    src: url(/assets/fonts/Kamerik\ 205\ Heavy.ttf),
-}
-
-@font-face {
-    font-family: 'Kamerik-Light';
-    src: url(/assets/fonts/Kamerik\ 205\ Light.ttf),
-}
 .indexTitle {
     color: #FFFEFC;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-family: 'Kamerik-Heavy';
-   
+    text-shadow: 5px 1px 20px rgba(0, 0, 0, 0.5);      font-family: 'Kamerik-Heavy';
+
     display: inline-block;
 }
 
 .indexTitle h1 {
     font-family: 'Kamerik-Heavy';
-    font-size: 150px;
+    font-size: var(--font-hero);
     color: #FFFEFC;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: 5px 1px 20px rgba(0, 0, 0, 0.5);     font-family: 'Kamerik-Heavy';
     line-height: normal;
     margin: 0;
-    font-weight: 900;
+    font-weight: 500;
 }
-
 
 .indexTitle h2 {
     margin: 0;
     font-family: 'Kamerik-Heavy';
-    font-size: 80px;
+    font-size: var(--font-hero-sub);
     color: var(--colorWhite);
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-weight: 100;
+    text-shadow: 5px 1px 20px rgba(0, 0, 0, 0.5); 
+       font-weight: 100;
 }
 
 .linedStructure {
@@ -51,24 +34,78 @@
 .linedSubtitle {
     display: flex;
 
-    gap: 37px;
+    gap: 5px;
     align-items: center;
     margin: 0;
     align-self: center;
+    width: 100%;
+    text-align: center;
 }
 
 .indexTitle h3 {
     font-family: 'Kamerik-heavy';
-    font-size: 20px;
+    font-size: var(--font-m);
     color: var(--colorWhite);
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin: 0;
+    text-shadow: 5px 1px 20px rgba(0, 0, 0, 0.5);    margin: 0;
     font-weight: 100;
-
+    flex: 1;
 }
 
 .indexTitle .line {
+    flex: 0.8;
+
     height: 3px;
     background-color: var(--colorWhite);
-    width: 230px;
+    width: calc(width);
+}
+
+@media (max-width: 1485px) {
+    .indexTitle {
+        padding: 120px 60px 0 40px !important;
+    }
+}
+
+@media (max-width: 1277px) {
+    .indexTitle h1 {
+        font-size: calc(var(--font-hero) * 0.8);
+    }
+
+    .indexTitle h2 {
+        font-size: calc(var(--font-hero-sub) * 0.8);
+    }
+
+    .indexTitle h3 {
+        font-size: calc(var(--font-m) * 0.8);
+font-family: montserrat;  
+font-weight: 700;  }
+}
+
+@media (max-width: 1000px) {
+    .indexTitle h1 {
+        font-size: calc(var(--font-hero) * 0.6);
+    }
+
+    .indexTitle h2 {
+        font-size: calc(var(--font-hero-sub) * 0.6);
+    }
+
+    .indexTitle h3 {
+        font-size: calc(var(--font-m) * 0.6);
+
+    }
+    
+}
+
+@media (max-width: 580px) {
+    .indexTitle h1 {
+        font-size: calc(var(--font-hero) * 0.5);
+    }
+
+    .indexTitle h2 {
+        font-size: calc(var(--font-hero-sub) * 0.5);
+    }
+
+    .indexTitle h3 {
+        font-size: calc(var(--font-m) * 0.5);
+    }
 }
