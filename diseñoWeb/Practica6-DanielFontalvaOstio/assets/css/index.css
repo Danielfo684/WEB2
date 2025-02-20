@@ -421,7 +421,8 @@ main {
 }
 
 
-.about-section:nth-of-type(2) {
+.about-section:nth-of-type(6),
+.about-section:nth-of-type(4) {
     .about-flex {
         flex-direction: row-reverse;
         padding-left: 0;
@@ -455,11 +456,44 @@ main {
     }
 }
 
+.about-me-section {
+    margin-top: 100px;
+}
+
+.about-me-content {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.about-me-image {
+    width: 400px;
+    height: auto;
+}
+
+.about-me-text {
+    max-width: 600px;
+    min-width: 30ch;
+}
+
+.about-me-text h2 {
+    font-size: var(--font-title);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about-me-text p {
+    font-size: var(--font-m);
+    line-height: 1.6;
+}
+
 .about-text {
     width: 600px;
     padding: 60px 150px 60px 150px;
     font-weight: 300;
-    font-size: var(--font-m);
+    font-size: var(--font-sm);
     background-color: var(--grey);
     clip-path: polygon(5.5% 0, 100% 0, 100% 100%, 0% 100%);
     color: white;
@@ -467,7 +501,13 @@ main {
 
 .about-title-section {
     padding-left: 8vw;
+    margin-top: 4rem;
 
+    h1 {
+        font-size: var(--font-title);
+        font-weight: 500;
+        margin: 0;
+    }
 }
 
 .about-icons {
@@ -528,14 +568,13 @@ main {
         color: var(--black);
         position: relative;
         font-size: var(--font-subtitle);
-        font-weight: 400;
         margin: 0;
 
     }
 
     .tech-explanation-text {
         width: 35%;
-        font-size: var(--font-m);
+        font-size: var(--font-sm);
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -546,17 +585,18 @@ main {
 }
 
 .project-cta-section {
-    clip-path: polygon(75% 0%, 82% 50%, 75% 100%, 0% 100%, 6% 50%, 0% 0%);
     background-color: var(--grey);
     color: white;
     display: flex;
     align-items: center;
     height: fit-content;
-    width: 10rem;
-    margin-bottom: 30px;
-    padding: 0px 50px;
-    padding-left: 35px;
-    transition: width 1s ease, justify-content 2s ease;
+    white-space: nowrap;
+    width: 12rem;
+    margin-bottom: 20px;
+    padding: 0px 30px;
+    padding-right: 30px;
+    box-sizing: border-box;
+    justify-content: space-between;
 
     img {
         width: 40px;
@@ -570,24 +610,20 @@ main {
     h1 {
         font-size: var(--font-sm);
         position: relative;
-        transition: transform 1s ease;
         font-weight: 400;
 
     }
 }
 
 .project-cta-section:hover {
-    width: calc(10rem + 2rem);
+
     left: 500px;
 
     img {
-        transform: translateX(30px);
+        transform: translateX(10px);
         animation: none;
     }
 
-    h1 {
-        transform: translateX(20px);
-    }
 }
 
 @keyframes movingArrow {
@@ -607,7 +643,6 @@ main {
     display: flex;
     flex-direction: column;
     gap: 35px;
-    padding-top: 120px;
 
     .title-section {
         padding-left: 8vw;
@@ -703,10 +738,12 @@ main {
 
     .project-exposition-title {
         padding-left: 8vw;
-    p { margin-bottom: 0;
-        font-size: var(--font-subtitle);
-        font-weight: bold;
-    } 
+
+        p {
+            margin-bottom: 0;
+            font-size: var(--font-subtitle);
+            font-weight: bold;
+        }
     }
 
 }
@@ -768,6 +805,7 @@ main {
 .project-microsection p:last-child {
     line-height: 1.5rem;
     width: 80%;
+    font-size: var(--font-s);
 
 }
 
@@ -856,10 +894,201 @@ main {
     font-size: clamp(2rem, 1.333rem + 2.222vw, 4rem);
     margin: 4rem 0;
     text-transform: uppercase;
-    
+
 }
 
 
+
+/* ----------------------- Service Cards --------------*/
+.service-card-container {
+    display: flex;
+    margin: var(--main-padding);
+    align-items: center;
+    gap: 80px;
+}
+
+.javascript-section {
+    margin-top: 200px !important;
+}
+
+.service-card-img {
+    max-width: 900px;
+    img {
+        display: flex;
+        width: 90%;
+        height: auto;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.service-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.service-card-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+
+
+    h2 {
+        font-size: var(--font-subtitle);
+        margin-bottom: 0;
+    }
+
+    p {
+        font-size: var(--font-s);
+        line-height: 1.5;
+        max-width: 60ch;
+
+    }
+}
+
+.service-card-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    width: 100%;
+
+    h3 {
+        font-size: var(--font-m);
+        line-height: 1.5;
+        border-bottom: 1px solid var(--grey);
+
+    }
+}
+
+.service-card-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    flex-flow: row wrap;
+}
+
+.precios-cards-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    padding: 20px;
+    margin-top: 100px;
+    gap: 40px;
+}
+
+.precios-cards-card {
+    background: #fff;
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+    transition: transform 0.2s ease-in-out, box-shadow 0.25s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.precios-cards-card:hover {
+    transform: scale(1.02);
+}
+
+.precios-cards-card h2 {
+    color: var(--main-color);
+}
+
+.precios-cards-price {
+    font-size: var(--font-subtitle);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    color: #292929;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.precios-cards-old-price {
+    font-size: var(--font-sm);
+    color: #979797;
+    position: absolute;
+    top: -20px;
+    left: 144px;
+}
+
+.precios-cards-new-price {
+    font-size: var(--font-subtitle);
+    font-weight: bold;
+    color: red;
+}
+
+.precios-cards-features {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin-bottom: auto;
+}
+
+.precios-cards-features li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.precios-cards-features li:last-child {
+    border-bottom: none;
+}
+
+.precios-cards-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background: var(--main-color);
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+    width: fit-content;
+    align-self: center;
+}
+
+.precios-cards-btn:hover {
+    background: var(--second-color);
+}
+
+.precios-cards-footer {
+    margin-top: 20px;
+    font-size: var(--font-s);
+    color: #555;
+    font-weight: bold;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+
+
+.service-card-info {
+    display: flex;
+    padding: 16px 0px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    border-bottom: 1px solid var(--grey);
+    width: 40%;
+    gap: 16px;
+
+    s {
+        color: green;
+    }
+
+    img {
+        width: 50px;
+    }
+}
 
 @media (max-width: 1300px) {
 
@@ -917,15 +1146,23 @@ main {
 
 
 @media (max-width: 1100px) {
+
+    .service-card-container {
+        flex-flow: column;
+        gap: 50px;
+    }
     .tech-explanation-content {
         flex-direction: column;
         gap: 50px;
-
+        
+       
+    }
+    .service-card-img{
         img {
-            width: 80% !important;
+            width: 60% !important;
+            margin: auto;
         }
     }
-
     .tech-explanation-text {
         max-width: 70ch !important;
         width: 100% !important;
@@ -954,8 +1191,9 @@ main {
     .project-exposition-body {
         display: block;
     }
+
     .about-flex {
-flex-flow: column !important;
+        flex-flow: column !important;
 
 
     }
@@ -1009,4 +1247,63 @@ flex-flow: column !important;
     .hero-background-image {
         display: none;
     }
+}
+
+
+
+
+.project-backend {
+    display: flex;
+    align-items: flex-start;
+
+}
+
+
+.products-card-container {
+    margin-top: 50px;
+
+    .grid {
+        display: flex;
+        justify-content: center;
+    }
+
+    h3 {
+        font-size: var(--font-title);
+        font-weight: 600;
+        margin: 0;
+    }
+
+    p {
+        font-size: var(--font-subtitle);
+        margin: 0;
+    }
+
+    .box {
+        flex: 1;
+        padding: 20px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        height: 350px;
+    }
+
+    .box-1 {
+        color: white;
+        background-color: var(--analogo-second-color);
+
+    }
+
+    .box-2 {
+        background-color: rgb(196, 196, 196);
+
+        color: white;
+    }
+
+    .box-3 {
+        background-color: var(--second-color);
+
+        color: white;
+    }
+
+
 }
