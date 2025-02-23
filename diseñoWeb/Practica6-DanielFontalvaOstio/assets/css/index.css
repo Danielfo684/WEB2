@@ -613,7 +613,7 @@ gap: 50px;
 }
 
 .skill-card {
-    min-width: 400px;
+    min-width: 350px;
     max-width: 600px;
     background-color: white;
     padding: 20px;
@@ -1309,7 +1309,7 @@ gap: 50px;
 
 
 
-.container {
+.galeria-container {
     width: 80%;
     margin: 0 auto;
     columns: 3 300px;
@@ -1342,10 +1342,10 @@ gap: 50px;
     transition: opacity 0.5s ease, bottom 0.5s ease;
 }
 
-.container {
+.galeria-container {
     padding: 50px 0;
 }
-.container img {
+.galeria-container img {
     position: relative;
     display: block;
     margin-bottom: 20px;
