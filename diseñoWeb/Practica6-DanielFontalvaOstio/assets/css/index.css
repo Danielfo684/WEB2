@@ -14,6 +14,7 @@
     --font-m: clamp(1rem, 1.5vw, 1.2rem);
     --font-sm: clamp(1rem, 1.2vw, 1.1rem);
 
+    --contrast-background: #f5f5f5;
     --font-s: clamp(0.9rem, 1.2vw, 1rem);
     --main-color: #008edf;
     --third-color: #00bda4;
@@ -64,8 +65,7 @@ body {
     z-index: 10;
     width: 32px;
     height: 32px;
-    border-radius: 4px;
-    background-color: var(--second-color);
+    background-color: var(--analogo-second-color);
     transition: transform .4s;
 }
 
@@ -191,8 +191,8 @@ main {
                 letter-spacing: .15em;
                 font-weight: 600;
                 color: black;
-                animation: typing 2.5s steps(40),
-                    blink-text .5s step-end infinite;
+                animation: typing 2.5s steps(40) 1s,
+                    blink-text .5s step-end infinite 1s;
             }
 
 
@@ -584,6 +584,80 @@ main {
 
 }
 
+
+
+
+/* -------------------soft-skills----------------------- */
+
+.soft-skills-big-section{
+    padding: var(--main-padding);
+    margin: 100px 0;
+    padding-bottom: 50px;
+        background-color: var(--contrast-background);
+
+}
+.skill-elements {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+width: 80%;
+    img {width: 100px;
+    height: 100px;}
+}
+.soft-skills-section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;  
+gap: 50px;
+    margin: auto;
+}
+
+.skill-card {
+    min-width: 400px;
+    max-width: 600px;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+}
+
+.progress-bar-container {
+    width: 100%;
+    background-color: #d2d2d2;
+}
+
+.progress-bar-fill {
+    height: 20px;
+    width: 70%; 
+    background-color: var(--analogo-second-color);
+         clip-path: polygon(0% 0, 100% 0, 98% 100%, 0% 100%);
+
+}
+
+.skill-number {
+    font-size: var(--font-subtitle);
+    font-weight: bold;
+}
+
+.skill-name {
+    font-size: var(--font-subtitle);
+    color: #333;
+}
+
+.skill-description {
+    font-size: var(--font-s);
+    color: #666;
+    padding: 0 10px;
+}
+
+
+
+
+
+/* -------------------projects----------------------- */
 .project-cta-section {
     background-color: var(--grey);
     color: white;
@@ -1090,6 +1164,221 @@ main {
     }
 }
 
+
+.reviews {
+    background-color: var(--contrast-background);
+    padding: 40px 20px;
+}
+
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.reviews-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.review-item {
+    background-color: #fff;
+    padding: 25px;
+    margin: 15px 0;
+    width: 300px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    color: var(--grey);
+    font-family: 'Arial', sans-serif;
+}
+
+
+.client-info {
+    align-items: center;
+    gap: 15px;
+}
+.client-function {
+    font-size: var(--font-sm);
+    color: var(--analogo-second-color);
+    font-weight: 500;
+}
+.client-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.lined-name {
+    border-right: 1px solid #888;
+    padding-right: 10px;
+}
+
+.client-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.review-secondary-text {
+    font-size: 14px;
+    color: #888;
+    font-weight: 500;
+}
+
+.client-content {
+    margin-top: 10px;
+}
+
+.review-client-stars {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.review-title {
+    font-size: var(--font-m);
+    color: #000000;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-top: 0;
+}
+
+.review-text {
+    font-size: var(--font-sm);
+    color: #555;
+    line-height: 1.6;
+}
+
+.review-info {
+    padding: 30px;
+    margin-top: 50px;
+    text-align: center;
+    h2 {
+        font-size: var(--font-subtitle)
+    }
+}
+
+.mega-text {
+    font-size: var(--font-subtitle);
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.reviews-rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.rating-stars {
+    display: flex;
+    align-items: center;
+}
+
+.rating-stars-image {
+    width: 200px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.rating-number {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--main-color);
+}
+
+.button {
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px 30px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: var(--analogo-second-color);
+}
+
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    columns: 3 300px;
+
+}
+
+.image-section {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.image-section img {
+    display: block;
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.image-section .image-title {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    padding: 5px 10px;
+    font-family: Poppins, sans-serif;
+    font-size: var(--font-m);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease, bottom 0.5s ease;
+}
+
+.container {
+    padding: 50px 0;
+}
+.container img {
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+    border-image: fill 0 linear-gradient(black, rgb(243, 243, 243));
+    opacity: 1;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.image-section:hover img {
+    transform: scale(1.1);
+
+}
+
+
+.image-title {
+    font-size: var(--font-sm);
+    z-index: 15;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.75) 0px -100px 36px inset;}
+
+.image-section:hover .image-title {
+    bottom: 8px;
+    opacity: 1;
+
+}
+.galeria {
+    margin: var(--main-padding)
+}
+
+
+
+
 @media (max-width: 1300px) {
 
     /* .hero-background-image {
@@ -1170,6 +1459,11 @@ main {
 
     .about-text {
         padding: 50px 100px 50px 100px;
+        font-size: var(--font-s);
+    }
+    #express {
+        height: 60px;
+        width: auto;  
     }
 
     .about-icons img {
@@ -1181,7 +1475,7 @@ main {
         padding-left: 50px !important;
     }
 
-    .about-section:nth-of-type(2) .about-flex {
+    .about-section:nth-of-type(4) .about-flex {
         padding-left: 0 !important;
         padding-right: 50px !important;
     }
