@@ -69,7 +69,6 @@ header>a {
     padding: 20px 1%;
     text-align: center;
     box-sizing: border-box;
-    border-radius: 5px;
 }
 
 header a:hover {
@@ -78,15 +77,7 @@ header a:hover {
 }
 
 
-.texto:hover {
-    box-shadow: #423E3D 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-    cursor: pointer;
-    border-radius: 2px;
-}
 
-/*.texto:hover {
-    box-shadow: rgba(255, 255, 255, 0.35) 0px -50px 36px -28px inset;cursor: pointer;
-} */
 .headerBox {
     flex-grow: 0.8;
 }
@@ -163,7 +154,7 @@ header a:hover {
     align-items: center;
     margin: 0px;
     justify-content: space-around;
-    gap: 50px;
+    gap: 120px;
     margin-bottom: 50px;
 }
 
@@ -175,6 +166,21 @@ header a:hover {
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
+}
+.polaroid:nth-child(1) {
+    transform: rotate(-4deg);
+}
+
+.polaroid:nth-child(2) {
+    transform: rotate(3deg);
+}
+
+.polaroid:nth-child(3) {
+    transform: rotate(-2deg);
+}
+
+.polaroid:nth-child(4) {
+    transform: rotate(2deg);
 }
 
 .polaroidFormat>p {
@@ -193,13 +199,20 @@ header a:hover {
 }
 
 .emptySpace2 {
-    flex-grow: 0.8;
+    flex-grow: 0;
+    width: 10%;
+}
+.emptySpace3 {
+    flex-grow: 0.6;
     width: 15%;
 }
 
 .polaroid img {
     margin-bottom: 0px;
     flex: 0.5;
+    width: 297px;
+    height: 297px;
+    object-fit: cover;
 }
 
 .polaroidText {
@@ -367,7 +380,9 @@ margin-bottom: 50px;
     text-align: center;
     margin-bottom: 100px;
 }
-
+.intersection-hits h1 {
+    padding: 0 50px;
+}
 
 /*-----------------------------Music PLAYER Section-----------------------------*/
 
@@ -428,8 +443,8 @@ margin-bottom: 50px;
 .concert-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 20px;
+    justify-content: center;
+    gap: 150px;
     padding: 20px;
     align-items: flex-start;
 }
@@ -602,7 +617,10 @@ margin-bottom: 50px;
     border-radius: 5px;
     background-color: rgb(23, 23, 23)
 }
-
+.product-buy img {
+    width: 30px;
+    height: 30px;
+}
 .product-buy:hover {
     background-color: #7c7e7d;
     cursor: pointer;
