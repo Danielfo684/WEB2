@@ -29,7 +29,7 @@ body {
     height: 100vh;
     background-image: url(../images/Background_hero.png);
     background-size: cover;
-    background-position: right;
+    background-position: center;
     background-repeat: no-repeat;
 
 }
@@ -69,6 +69,7 @@ header>a {
     padding: 20px 1%;
     text-align: center;
     box-sizing: border-box;
+    border-radius: 5px;
 }
 
 header a:hover {
